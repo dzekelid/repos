@@ -33,7 +33,7 @@ apis:
   tags: Repos
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery/repos/master/_listings/aws-ec2-container-registry-service/action-getrepositorypolicy-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery/repos/master/_listings/aws-ec2-container-registry-service/action-setrepositorypolicy-get.md
 x-common:
 - type: x-documentation
   url: http://docs.aws.amazon.com/AmazonECR/latest/APIReference/Welcome.html
