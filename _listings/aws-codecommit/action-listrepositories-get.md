@@ -10,7 +10,7 @@ produces:
 consumes:
 - application/json
 paths:
-  /?Action=ListRepositories&k=1:
+  /?Action=ListRepositories:
     get:
       summary: ' List Repositories '
       description: Gets information about one or more repositories
