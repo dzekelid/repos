@@ -10,7 +10,7 @@ produces:
 consumes:
 - application/json
 paths:
-  /?Action=BatchGetRepositories&k=1:
+  /?Action=BatchGetRepositories:
     get:
       summary: ' Batch Get Repositories '
       description: Returns information about one or more repositories
