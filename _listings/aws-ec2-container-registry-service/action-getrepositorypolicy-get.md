@@ -10,7 +10,7 @@ produces:
 consumes:
 - application/json
 paths:
-  /?Action=GetRepositoryPolicy&k=1:
+  /?Action=GetRepositoryPolicy:
     get:
       summary: ' Get Repository Policy '
       description: Retrieves the repository policy for a specified repository
