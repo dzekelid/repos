@@ -10,7 +10,7 @@ produces:
 consumes:
 - application/json
 paths:
-  /?Action=UpdateRepositoryName&k=1:
+  /?Action=UpdateRepositoryName:
     get:
       summary: ' Update Repository Name '
       description: Renames a repository
