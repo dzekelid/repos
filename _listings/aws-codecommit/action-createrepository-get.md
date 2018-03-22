@@ -10,7 +10,7 @@ produces:
 consumes:
 - application/json
 paths:
-  /?Action=CreateRepository&k=1:
+  /?Action=CreateRepository:
     get:
       summary: ' Create Repository '
       description: Creates a new, empty repository
