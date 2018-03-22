@@ -25,7 +25,7 @@ apis:
   tags: Repos
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/repositories-username-repo-slug-pipelines-config-ssh-known-hosts-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/repositories-username-repo-slug-pipelines-config-ssh-known-hosts-post.md
 x-common:
 - type: x-developer
   url: https://developer.atlassian.com/cloud/bitbucket/
