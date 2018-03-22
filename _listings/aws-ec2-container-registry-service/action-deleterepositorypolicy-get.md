@@ -10,7 +10,7 @@ produces:
 consumes:
 - application/json
 paths:
-  /?Action=DeleteRepositoryPolicy&k=1:
+  /?Action=DeleteRepositoryPolicy:
     get:
       summary: ' Delete Repository Policy '
       description: Deletes the repository policy from a specified repository
