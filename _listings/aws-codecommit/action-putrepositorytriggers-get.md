@@ -10,7 +10,7 @@ produces:
 consumes:
 - application/json
 paths:
-  /?Action=PutRepositoryTriggers&k=1:
+  /?Action=PutRepositoryTriggers:
     get:
       summary: ' Put Repository Triggers '
       description: Replaces all triggers for a repository
