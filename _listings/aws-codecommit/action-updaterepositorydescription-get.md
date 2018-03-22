@@ -10,7 +10,7 @@ produces:
 consumes:
 - application/json
 paths:
-  /?Action=UpdateRepositoryDescription&k=1:
+  /?Action=UpdateRepositoryDescription:
     get:
       summary: ' Update Repository Description '
       description: Sets or changes the comment or description for a repository
