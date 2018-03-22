@@ -10,7 +10,7 @@ produces:
 consumes:
 - application/json
 paths:
-  /?Action=TestRepositoryTriggers&k=1:
+  /?Action=TestRepositoryTriggers:
     get:
       summary: ' Test Repository Triggers '
       description: Tests the functionality of repository triggers by sending information
