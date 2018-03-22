@@ -33,7 +33,7 @@ apis:
   tags: Repos
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/google-cloud-source-repositories/v1-parent-repos-post.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/google-cloud-source-repositories/v1-resource-getiampolicy-get.md
 x-common:
 - type: x-concepts
   url: https://cloud.google.com/source-repositories/docs/concepts
