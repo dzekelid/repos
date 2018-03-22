@@ -18,9 +18,9 @@ tags:
 - Google APIs
 - GitHub
 - Code
-created: "2018-03-13"
-modified: "2018-03-13"
-url: https://raw.githubusercontent.com/streamdata-gallery/repos/master/_listings/google-cloud-source-repositories/apis.yaml
+created: "2018-03-22"
+modified: "2018-03-22"
+url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/google-cloud-source-repositories/apis.yaml
 specificationVersion: "0.14"
 apis:
 - name: Cloud Source Repositories API
@@ -33,7 +33,7 @@ apis:
   tags: Repos
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery/repos/master/_listings/google-cloud-source-repositories/v1-resource-testiampermissions-post.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/google-cloud-source-repositories/v1-name-delete.md
 x-common:
 - type: x-concepts
   url: https://cloud.google.com/source-repositories/docs/concepts
