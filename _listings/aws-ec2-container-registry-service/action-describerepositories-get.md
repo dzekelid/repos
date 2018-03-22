@@ -10,7 +10,7 @@ produces:
 consumes:
 - application/json
 paths:
-  /?Action=DescribeRepositories&k=1:
+  /?Action=DescribeRepositories:
     get:
       summary: ' Describe Repositories '
       description: Describes image repositories in a registry
