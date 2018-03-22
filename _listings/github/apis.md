@@ -40,7 +40,7 @@ apis:
   tags: Repos
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/orgs-org-repos-post.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repos-owner-repo-delete.md
 x-common:
 - type: x-net-library
   url: https://github.com/octokit/octokit.net
