@@ -10,7 +10,7 @@ produces:
 consumes:
 - application/json
 paths:
-  /?Action=SetRepositoryPolicy&k=1:
+  /?Action=SetRepositoryPolicy:
     get:
       summary: ' Set Repository Policy '
       description: Applies a repository policy on a specified repository to control
