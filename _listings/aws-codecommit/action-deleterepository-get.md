@@ -10,7 +10,7 @@ produces:
 consumes:
 - application/json
 paths:
-  /?Action=DeleteRepository&k=1:
+  /?Action=DeleteRepository:
     get:
       summary: ' Delete Repository '
       description: Deletes a repository
