@@ -10,7 +10,7 @@ produces:
 consumes:
 - application/json
 paths:
-  /?Action=GetRepositoryTriggers&k=1:
+  /?Action=GetRepositoryTriggers:
     get:
       summary: ' Get Repository Triggers '
       description: Gets information about triggers configured for a repository
