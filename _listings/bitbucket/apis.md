@@ -25,7 +25,7 @@ apis:
   tags: Repos
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/teams-username-repositories-parameters.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/users-username-repositories-get.md
 x-common:
 - type: x-developer
   url: https://developer.atlassian.com/cloud/bitbucket/
