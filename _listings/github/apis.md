@@ -27,8 +27,8 @@ tags:
 - Code
 - Change Log Example
 - Change Log
-created: "2018-03-22"
-modified: "2018-03-22"
+created: "2018-03-23"
+modified: "2018-03-23"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/apis.yaml
 specificationVersion: "0.14"
 apis:
@@ -40,7 +40,7 @@ apis:
   tags: Repos
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/users-username-repos-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/legacy-issues-search-owner-repository-state-keyword-get.md
 x-common:
 - type: x-net-library
   url: https://github.com/octokit/octokit.net
