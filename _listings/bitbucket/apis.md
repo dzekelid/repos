@@ -26,20 +26,23 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/users-username-repositories-parameters.md
-- name: Bitbucket Update Repositories Username Repo Slug Branch Restrictions
+- name: Bitbucket Delete Repositories Username Repo Slug Commit Node Approve
   description: |-
-    Updates an existing branch restriction rule.
+    Redact the authenticated user's approval of the specified commit.
 
-    Fields not present in the request body are ignored.
-
-    See [`POST`](../../branch-restrictions#post) for details.
+    This operation is only available to users that have explicit access to
+    the repository. In contrast, just the fact that a repository is
+    publicly accessible to users does not give them the ability to approve
+    commits.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/bitbucket-logo.png
   humanURL: https://bitbucket.org/
   baseURL: https://api.bitbucket.org//2.0
   tags: Repos
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/repositories-username-repo-slug-branch-restrictions-id-put.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/repositories-username-repo-slug-commit-node-approve-delete.md
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/repositories-username-repo-slug-commit-node-approve-delete-postman.md
 x-common:
 - type: x-developer
   url: https://developer.atlassian.com/cloud/bitbucket/
