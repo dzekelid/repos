@@ -52,17 +52,17 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repos-owner-repo-downloads-downloadid-get.md
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repos-owner-repo-downloads-downloadid-get-postman.md
-- name: Github Get Repos Owner Repo Git Trees Shacode
-  description: Get a Tree.
+- name: Github Get Repos Owner Repo Hooks
+  description: Get list of hooks.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
   humanURL: https://github.com
   baseURL: https://api.github.com//
   tags: Repos
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repos-owner-repo-git-trees-shacode-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repos-owner-repo-hooks-get.md
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repos-owner-repo-git-trees-shacode-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repos-owner-repo-hooks-get-postman.md
 x-common:
 - type: x-net-library
   url: https://github.com/octokit/octokit.net
