@@ -41,17 +41,17 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/users-username-repos-get.md
-- name: Github Get Repos Owner Repo Downloads
-  description: Deprecated. List downloads for a repository.
+- name: Github Delete Repos Owner Repo Downloads Download
+  description: Deprecated. Delete a download.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
   humanURL: https://github.com
   baseURL: https://api.github.com//
   tags: Repos
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repos-owner-repo-downloads-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repos-owner-repo-downloads-downloadid-delete.md
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repos-owner-repo-downloads-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repos-owner-repo-downloads-downloadid-delete-postman.md
 x-common:
 - type: x-net-library
   url: https://github.com/octokit/octokit.net
