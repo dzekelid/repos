@@ -42,41 +42,19 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/repositories-username-repo-slug-commits-post.md
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/repositories-username-repo-slug-commits-post-postman.md
-- name: Bitbucket Add Repositories Username Repo Slug Hooks
+- name: Bitbucket Delete Repositories Username Repo Slug Hooks U
   description: |-
-    Creates a new webhook on the specified repository.
-
-    Example:
-
-    ```
-    $ curl -X POST -u credentials -H 'Content-Type: application/json'           https://api.bitbucket.org/2.0/repositories/username/slug/hooks           -d '
-        {
-          "description": "Webhook Description",
-          "url": "https://example.com/",
-          "active": true,
-          "events": [
-            "repo:push",
-            "issue:created",
-            "issue:updated"
-          ]
-        }'
-    ```
-
-    Note that this call requires the webhook scope, as well as any scope
-    that applies to the events that the webhook subscribes to. In the
-    example above that means: `webhook`, `repository` and `issue`.
-
-    Also note that the `url` must properly resolve and cannot be an
-    internal, non-routed address.
+    Deletes the specified webhook subscription from the given
+    repository.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/bitbucket-logo.png
   humanURL: https://bitbucket.org/
   baseURL: https://api.bitbucket.org//2.0
   tags: Repos
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/repositories-username-repo-slug-hooks-post.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/repositories-username-repo-slug-hooks-uid-delete.md
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/repositories-username-repo-slug-hooks-post-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/repositories-username-repo-slug-hooks-uid-delete-postman.md
 x-common:
 - type: x-developer
   url: https://developer.atlassian.com/cloud/bitbucket/
