@@ -26,17 +26,28 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/users-username-repositories-parameters.md
-- name: Bitbucket Parameters Repositories
-  description: Parameters repositories
+- name: Bitbucket Get Repositories Username
+  description: |-
+    Returns a paginated list of all repositories owned by the specified
+    account or UUID.
+
+    The result can be narrowed down based on the authenticated user's role.
+
+    E.g. with `?role=contributor`, only those repositories that the
+    authenticated user has write access to are returned (this includes any
+    repo the user is an admin on, as that implies write access).
+
+    This endpoint also supports filtering and sorting of the results. See
+    [filtering and sorting](../../meta/filtering) for more details.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/bitbucket-logo.png
   humanURL: https://bitbucket.org/
   baseURL: https://api.bitbucket.org//2.0
   tags: Repos
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/repositories-parameters.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/repositories-username-get.md
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/repositories-parameters-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/repositories-username-get-postman.md
 x-common:
 - type: x-developer
   url: https://developer.atlassian.com/cloud/bitbucket/
