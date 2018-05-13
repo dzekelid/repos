@@ -1,8 +1,9 @@
 ---
 swagger: "2.0"
 info:
-  title: AWS CodeCommit API
+  title: AWS CodeCommit API Update Repository Description
   version: 1.0.0
+  description: Sets or changes the comment or description for a repository.
 schemes:
 - http
 produces:
