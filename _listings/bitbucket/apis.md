@@ -26,17 +26,23 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/users-username-repositories-parameters.md
-- name: Bitbucket Parameters Repositories Username Repo Slug Commit Node Approve
-  description: Parameters repositories username repo slug commit node approve
+- name: Bitbucket Add Repositories Username Repo Slug Commit Node Approve
+  description: |-
+    Approve the specified commit as the authenticated user.
+
+    This operation is only available to users that have explicit access to
+    the repository. In contrast, just the fact that a repository is
+    publicly accessible to users does not give them the ability to approve
+    commits.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/bitbucket-logo.png
   humanURL: https://bitbucket.org/
   baseURL: https://api.bitbucket.org//2.0
   tags: Repos
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/repositories-username-repo-slug-commit-node-approve-parameters.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/repositories-username-repo-slug-commit-node-approve-post.md
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/repositories-username-repo-slug-commit-node-approve-parameters-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/repositories-username-repo-slug-commit-node-approve-post-postman.md
 x-common:
 - type: x-developer
   url: https://developer.atlassian.com/cloud/bitbucket/
