@@ -26,17 +26,47 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/users-username-repositories-parameters.md
-- name: Bitbucket Parameters Repositories Username Repo Slug
-  description: Parameters repositories username repo slug
+- name: Bitbucket Add Repositories Username Repo Slug
+  description: |-
+    Creates a new repository.
+
+    Note: In order to set the project for the newly created repository,
+    pass in either the project key or the project UUID as part of the
+    request body as shown in the examples below:
+
+    ```
+    $ curl -X POST -H "Content-Type: application/json" -d '{
+        "scm": "git",
+        "project": {
+            "key": "MARS"
+        }
+    }' https://api.bitbucket.org/2.0/repositories/teamsinspace/hablanding
+    ```
+
+    or
+
+    ```
+    $ curl -X POST -H "Content-Type: application/json" -d '{
+        "scm": "git",
+        "project": {
+            "key": "{ba516952-992a-4c2d-acbd-17d502922f96}"
+        }
+    }' https://api.bitbucket.org/2.0/repositories/teamsinspace/hablanding
+    ```
+
+    The project must only be assigned for repositories belonging to a team.
+    If the repository owner is a team and the project is not provided, the
+    repository is automatically assigned to the oldest project in the team.
+
+    Note: In the examples above, the username `teamsinspace`,
+    and/or the repository name `hablanding` can be replaced by UUIDs.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/bitbucket-logo.png
   humanURL: https://bitbucket.org/
   baseURL: https://api.bitbucket.org//2.0
   tags: Repos
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/repositories-username-repo-slug-parameters.md
-  - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/repositories-username-repo-slug-parameters-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/repositories-username-repo-slug-post.md
 x-common:
 - type: x-developer
   url: https://developer.atlassian.com/cloud/bitbucket/
