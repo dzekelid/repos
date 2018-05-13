@@ -1,8 +1,11 @@
 ---
 swagger: "2.0"
 info:
-  title: Cloud Source Repositories
-  description: Access source code repositories hosted by Google.
+  title: Cloud Source Repositories API Return Permissions
+  description: |-
+    Returns permissions that a caller has on the specified resource.
+    If the resource does not exist, this will return an empty set of
+    permissions, not a NOT_FOUND error.
   contact:
     name: Google
     url: https://google.com
