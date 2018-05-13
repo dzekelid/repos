@@ -1,10 +1,11 @@
 ---
 swagger: "2.0"
 info:
-  title: Bitbucket
-  description: Code against the Bitbucket API to automate simple tasks, embed Bitbucket
-    data into your own site, build mobile or desktop apps, or even add custom UI add-ons
-    into Bitbucket itself using the Connect framework.
+  title: Bitbucket Get Repositories Username Repo Slug Issues Issue  Vote
+  description: |-
+    Check whether the authenticated user has voted for this issue.
+    A 204 status code indicates that the user has voted, while a 404
+    implies they haven't.
   termsOfService: https://www.atlassian.com/legal/customer-agreement
   contact:
     name: Bitbucket Support
