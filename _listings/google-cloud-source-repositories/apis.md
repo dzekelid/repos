@@ -34,19 +34,20 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/google-cloud-source-repositories/v1-resource-testiampermissions-post.md
-- name: Cloud Source Repositories API Create Repo
+- name: Cloud Source Repositories API Get Access Control Policy
   description: |-
-    Creates a repo in the given project with the given name..
-
-    If the named repository already exists, `CreateRepo` returns
-    `ALREADY_EXISTS`.
+    Gets the access control policy for a resource.
+    Returns an empty policy if the resource exists and does not have a policy
+    set.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/google-cloud-repositories.png
   humanURL: https://cloud.google.com/source-repositories/
   baseURL: http:://sourcerepo.googleapis.com//
   tags: Repos
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/google-cloud-source-repositories/v1-parent-repos-post.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/google-cloud-source-repositories/v1-resource-getiampolicy-get.md
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/google-cloud-source-repositories/v1-resource-getiampolicy-get-postman.md
 x-common:
 - type: x-concepts
   url: https://cloud.google.com/source-repositories/docs/concepts
