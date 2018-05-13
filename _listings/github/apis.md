@@ -41,17 +41,22 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/users-username-repos-get.md
-- name: Github Get Repos Owner Repo Branches Branch
-  description: Get Branch
+- name: Github Get Repos Owner Repo Collaborators
+  description: |-
+    List.
+    When authenticating as an organization owner of an organization-owned
+    repository, all organization owners are included in the list of
+    collaborators. Otherwise, only users with access to the repository are
+    returned in the collaborators list.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
   humanURL: https://github.com
   baseURL: https://api.github.com//
   tags: Repos
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repos-owner-repo-branches-branch-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repos-owner-repo-collaborators-get.md
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repos-owner-repo-branches-branch-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repos-owner-repo-collaborators-get-postman.md
 x-common:
 - type: x-net-library
   url: https://github.com/octokit/octokit.net
