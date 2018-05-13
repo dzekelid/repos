@@ -26,32 +26,19 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/users-username-repositories-parameters.md
-- name: Bitbucket Update Repositories Username Repo Slug
+- name: Bitbucket Get Repositories Username Repo Slug Branch Restrictions
   description: |-
-    Since this endpoint can be used to both update and to create a
-    repository, the request body depends on the intent.
-
-    ### Creation
-
-    See the POST documentation for the repository endpoint for an example
-    of the request body.
-
-    ### Update
-
-    Note: Changing the `name` of the repository will cause the location to
-    be changed. This is because the URL of the repo is derived from the
-    name (a process called slugification). In such a scenario, it is
-    possible for the request to fail if the newly created slug conflicts
-    with an existing repository's slug. But if there is no conflict,
-    the new location will be returned in the `Location` header of the
-    response.
+    Returns a paginated list of all branch restrictions on the
+    repository.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/bitbucket-logo.png
   humanURL: https://bitbucket.org/
   baseURL: https://api.bitbucket.org//2.0
   tags: Repos
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/repositories-username-repo-slug-put.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/repositories-username-repo-slug-branch-restrictions-get.md
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/repositories-username-repo-slug-branch-restrictions-get-postman.md
 x-common:
 - type: x-developer
   url: https://developer.atlassian.com/cloud/bitbucket/
