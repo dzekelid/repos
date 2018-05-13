@@ -34,7 +34,30 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/google-cloud-source-repositories/v1-resource-testiampermissions-post.md
+- name: Cloud Source Repositories API Delete Repo
+  description: Deletes a repo.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/google-cloud-repositories.png
+  humanURL: https://cloud.google.com/source-repositories/
+  baseURL: http:://sourcerepo.googleapis.com//
+  tags: Repos
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/google-cloud-source-repositories/v1-name-delete.md
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/google-cloud-source-repositories/v1-name-delete-postman.md
 x-common:
+- type: x-concepts
+  url: https://cloud.google.com/source-repositories/docs/concepts
+- type: x-documentation
+  url: https://cloud.google.com/source-repositories/docs/
+- type: x-getting-started
+  url: https://cloud.google.com/source-repositories/docs/quickstart
+- type: x-guides
+  url: https://cloud.google.com/source-repositories/docs/how-to
+- type: x-pricing
+  url: https://cloud.google.com/source-repositories/pricing
+- type: x-website
+  url: https://cloud.google.com/source-repositories/
 - type: x-concepts
   url: https://cloud.google.com/source-repositories/docs/concepts
 - type: x-documentation
