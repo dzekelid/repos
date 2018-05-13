@@ -1,8 +1,9 @@
 ---
 swagger: "2.0"
 info:
-  title: AWS EC2 Container Registry API
+  title: AWS EC2 Container Registry API Delete Repository Policy
   version: 1.0.0
+  description: Deletes the repository policy from a specified repository.
 schemes:
 - http
 produces:
