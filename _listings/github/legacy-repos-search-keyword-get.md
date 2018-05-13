@@ -1,12 +1,10 @@
 ---
 swagger: "2.0"
 info:
-  title: GitHub
-  description: GitHub is the best place to share code with friends, co-workers, classmates,
-    and complete strangers. Over 24 million people use GitHub to build amazing things
-    together across 67 million repositories. With the collaborative features of GitHub.com
-    and GitHub Business, it has never been easier for individuals and teams to write
-    faster, better code.
+  title: Github Get Legacy Repos Search Keyword
+  description: Find repositories by keyword. Note, this legacy method does not follow
+    the v3 pagination pattern. This method returns up to 100 results per page and
+    pages can be fetched using the start_page parameter.
   termsOfService: https://help.github.com/articles/github-terms-of-service/#b-api-terms
   version: 1.0.0
 host: api.github.com
@@ -27,6 +25,9 @@ paths:
       - in: header
         name: Accept
         description: Is used to set specified media type
+      - in: query
+        name: access_token
+        description: Your Github OAuth token
       - in: path
         name: keyword
         description: The search term
@@ -42,17 +43,6 @@ paths:
       - in: query
         name: start_page
         description: The page number to fetch
-      - in: header
-        name: X-GitHub-Media-Type
-        description: You can check the current version of media type in responses
-      - in: header
-        name: X-GitHub-Request-Id
-      - in: header
-        name: X-RateLimit-Limit
-      - in: header
-        name: X-RateLimit-Remaining
-      - in: header
-        name: X-RateLimit-Reset
       responses:
         200:
           description: OK
