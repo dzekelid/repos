@@ -61,19 +61,18 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repos-owner-repo-issues-number-comments-post.md
-- name: Github Get Repos Owner Repo Notifications
+- name: Github Put Repos Owner Repo Notifications
   description: |-
-    List your notifications in a repository
-    List all notifications for the current user.
+    Mark notifications as read in a repository.
+    Marking all notifications in a repository as "read" removes them from the
+    default view on GitHub.com.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
   humanURL: https://github.com
   baseURL: https://api.github.com//
   tags: Repos
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repos-owner-repo-notifications-get.md
-  - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repos-owner-repo-notifications-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repos-owner-repo-notifications-put.md
 x-common:
 - type: x-net-library
   url: https://github.com/octokit/octokit.net
