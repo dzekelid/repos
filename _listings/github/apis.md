@@ -72,19 +72,19 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repos-owner-repo-pulls-number-commits-get.md
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repos-owner-repo-pulls-number-commits-get-postman.md
-- name: Github Get Repos Owner Repo Readme
-  description: |-
-    Get the README.
-    This method returns the preferred README for a repository.
+- name: Github Get Repos Owner Repo Releases
+  description: Users with push access to the repository will receive all releases
+    (i.e., published releases and draft releases). Users with pull access will receive
+    published releases only
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
   humanURL: https://github.com
   baseURL: https://api.github.com//
   tags: Repos
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repos-owner-repo-readme-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repos-owner-repo-releases-get.md
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repos-owner-repo-readme-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repos-owner-repo-releases-get-postman.md
 x-common:
 - type: x-net-library
   url: https://github.com/octokit/octokit.net
