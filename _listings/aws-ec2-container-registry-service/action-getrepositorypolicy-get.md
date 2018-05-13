@@ -1,8 +1,9 @@
 ---
 swagger: "2.0"
 info:
-  title: AWS EC2 Container Registry API
+  title: AWS EC2 Container Registry API Get Repository Policy
   version: 1.0.0
+  description: Retrieves the repository policy for a specified repository.
 schemes:
 - http
 produces:
