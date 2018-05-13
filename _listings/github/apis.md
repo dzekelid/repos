@@ -83,17 +83,20 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/search-repositories-get.md
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/search-repositories-get-postman.md
-- name: Github Get Teams Team Repos Owner Repo
-  description: Check if a team manages a repository
+- name: Github Get User Repos
+  description: |-
+    List repositories for the authenticated user. Note that this does not include
+    repositories owned by organizations which the user can access. You can lis
+    user organizations and list organization repositories separately.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
   humanURL: https://github.com
   baseURL: https://api.github.com//
   tags: Repos
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/teams-teamid-repos-owner-repo-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/user-repos-get.md
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/teams-teamid-repos-owner-repo-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/user-repos-get-postman.md
 x-common:
 - type: x-net-library
   url: https://github.com/octokit/octokit.net
