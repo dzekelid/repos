@@ -52,15 +52,23 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repos-owner-repo-downloads-downloadid-get.md
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repos-owner-repo-downloads-downloadid-get-postman.md
-- name: Github Patch Repos Owner Repo Hooks Hook
-  description: Edit a hook.
+- name: Github Add Repos Owner Repo Hooks Hook Tests
+  description: |-
+    Test a push hook.
+    This will trigger the hook with the latest push to the current repository
+    if the hook is subscribed to push events. If the hook is not subscribed
+    to push events, the server will respond with 204 but no test POST will
+    be generated.
+    Note: Previously /repos/:owner/:repo/hooks/:id/tes
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
   humanURL: https://github.com
   baseURL: https://api.github.com//
   tags: Repos
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repos-owner-repo-hooks-hookid-patch.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repos-owner-repo-hooks-hookid-tests-post.md
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repos-owner-repo-hooks-hookid-tests-post-postman.md
 x-common:
 - type: x-net-library
   url: https://github.com/octokit/octokit.net
