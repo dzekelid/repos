@@ -1,10 +1,19 @@
 ---
 swagger: "2.0"
 info:
-  title: Bitbucket
-  description: Code against the Bitbucket API to automate simple tasks, embed Bitbucket
-    data into your own site, build mobile or desktop apps, or even add custom UI add-ons
-    into Bitbucket itself using the Connect framework.
+  title: Bitbucket Get Repositories Username
+  description: |-
+    Returns a paginated list of all repositories owned by the specified
+    account or UUID.
+
+    The result can be narrowed down based on the authenticated user's role.
+
+    E.g. with `?role=contributor`, only those repositories that the
+    authenticated user has write access to are returned (this includes any
+    repo the user is an admin on, as that implies write access).
+
+    This endpoint also supports filtering and sorting of the results. See
+    [filtering and sorting](../../meta/filtering) for more details.
   termsOfService: https://www.atlassian.com/legal/customer-agreement
   contact:
     name: Bitbucket Support
