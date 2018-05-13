@@ -52,15 +52,17 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repos-owner-repo-downloads-downloadid-get.md
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repos-owner-repo-downloads-downloadid-get-postman.md
-- name: Github Add Repos Owner Repo Hooks
-  description: Create a hook.
+- name: Github Delete Repos Owner Repo Hooks Hook
+  description: Delete a hook.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
   humanURL: https://github.com
   baseURL: https://api.github.com//
   tags: Repos
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repos-owner-repo-hooks-post.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repos-owner-repo-hooks-hookid-delete.md
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repos-owner-repo-hooks-hookid-delete-postman.md
 x-common:
 - type: x-net-library
   url: https://github.com/octokit/octokit.net
