@@ -1,8 +1,9 @@
 ---
 swagger: "2.0"
 info:
-  title: AWS CodeCommit API
+  title: AWS CodeCommit API Batch Get Repositories
   version: 1.0.0
+  description: Returns information about one or more repositories.
 schemes:
 - http
 produces:
