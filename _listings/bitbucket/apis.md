@@ -58,18 +58,25 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/repositories-username-repo-slug-issues-post.md
-- name: Bitbucket Delete Repositories Username Repo Slug Issues Issue  Attachments
-    Path
-  description: Delete repositories username repo slug issues issue  attachments path
+- name: Bitbucket Get Repositories Username Repo Slug Issues Issue  Attachments Path
+  description: |-
+    Returns the contents of the specified file attachment.
+
+    Note that this endpoint does not return a JSON response, but instead
+    returns a redirect pointing to the actual file that in turn will return
+    the raw contents.
+
+    The redirect URL contains a one-time token that has a limited lifetime.
+    As a result, the link should not be persisted, stored, or shared.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/bitbucket-logo.png
   humanURL: https://bitbucket.org/
   baseURL: https://api.bitbucket.org//2.0
   tags: Repos
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/repositories-username-repo-slug-issues-issue-id-attachments-path-delete.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/repositories-username-repo-slug-issues-issue-id-attachments-path-get.md
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/repositories-username-repo-slug-issues-issue-id-attachments-path-delete-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/repositories-username-repo-slug-issues-issue-id-attachments-path-get-postman.md
 x-common:
 - type: x-developer
   url: https://developer.atlassian.com/cloud/bitbucket/
