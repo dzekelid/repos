@@ -83,17 +83,20 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repos-owner-repo-releases-assets-id-delete.md
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repos-owner-repo-releases-assets-id-delete-postman.md
-- name: Github Get Repos Owner Repo Stargazers
-  description: List Stargazers.
+- name: Github Get Repos Owner Repo Stats Code Frequency
+  description: |-
+    Get the number of additions and deletions per week.
+    Returns a weekly aggregate of the number of additions and deletions pushed
+    to a repository.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
   humanURL: https://github.com
   baseURL: https://api.github.com//
   tags: Repos
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repos-owner-repo-stargazers-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repos-owner-repo-stats-code-frequency-get.md
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repos-owner-repo-stargazers-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repos-owner-repo-stats-code-frequency-get-postman.md
 x-common:
 - type: x-net-library
   url: https://github.com/octokit/octokit.net
