@@ -28,15 +28,15 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/aws-codecommit/action-updaterepositoryname-get.md
-- name: AWS CodeCommit API Create Repository
-  description: Creates a new, empty repository.
+- name: AWS CodeCommit API Delete Repository
+  description: Deletes a repository.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Developer-Tools_AWSCodeCommit.png
   humanURL: https://aws.amazon.com/codecommit/
   baseURL: http:://{host}//
   tags: Repos
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/aws-codecommit/action-createrepository-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/aws-codecommit/action-deleterepository-get.md
 x-common:
 - type: x-command-line-interface
   url: http://docs.aws.amazon.com/cli/latest/reference/codecommit/index.html
