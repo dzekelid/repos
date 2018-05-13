@@ -58,34 +58,29 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/repositories-username-repo-slug-issues-post.md
-- name: Bitbucket Get Repositories Username Repo Slug Pipelines Pipeline Uu Steps
-    Step Uu Log
-  description: |-
-    Retrieve the log file for a given step of a pipeline.
-
-    This endpoint supports (and encourages!) the use of [HTTP Range requests](https://tools.ietf.org/html/rfc7233) to deal with potentially very large log files.
+- name: Bitbucket Parameters Repositories Username Repo Slug Issues Issue  Comments
+    Comment
+  description: Parameters repositories username repo slug issues issue  comments comment
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/bitbucket-logo.png
   humanURL: https://bitbucket.org/
   baseURL: https://api.bitbucket.org//2.0
   tags: Repos
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/repositories-username-repo-slug-pipelines-pipeline-uuid-steps-step-uuid-log-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/repositories-username-repo-slug-issues-issue-id-comments-comment-id-parameters.md
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/repositories-username-repo-slug-pipelines-pipeline-uuid-steps-step-uuid-log-get-postman.md
-- name: Bitbucket Get Repositories Username Repo Slug Pipelines Config Ssh Key Pair
-  description: Retrieve the repository SSH key pair excluding the SSH private key.
-    The private key is a write only field and will never be exposed in the logs or
-    the REST API.
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/repositories-username-repo-slug-issues-issue-id-comments-comment-id-parameters-postman.md
+- name: Bitbucket Update Repositories Username Repo Slug Pipelines Config Ssh Key
+    Pair
+  description: Create or update the repository SSH key pair. The private key will
+    be set as a default SSH identity in your build container.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/bitbucket-logo.png
   humanURL: https://bitbucket.org/
   baseURL: https://api.bitbucket.org//2.0
   tags: Repos
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/repositories-username-repo-slug-pipelines-config-ssh-key-pair-get.md
-  - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/repositories-username-repo-slug-pipelines-config-ssh-key-pair-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/repositories-username-repo-slug-pipelines-config-ssh-key-pair-put.md
 x-common:
 - type: x-developer
   url: https://developer.atlassian.com/cloud/bitbucket/
