@@ -1,12 +1,13 @@
 ---
 swagger: "2.0"
 info:
-  title: GitHub
-  description: GitHub is the best place to share code with friends, co-workers, classmates,
-    and complete strangers. Over 24 million people use GitHub to build amazing things
-    together across 67 million repositories. With the collaborative features of GitHub.com
-    and GitHub Business, it has never been easier for individuals and teams to write
-    faster, better code.
+  title: Github Get Repositories
+  description: |-
+    List all public repositories.
+    This provides a dump of every public repository, in the order that they
+    were created.
+    Note: Pagination is powered exclusively by the since parameter. is the
+    Link header to get the URL for the next page of repositories.
   termsOfService: https://help.github.com/articles/github-terms-of-service/#b-api-terms
   version: 1.0.0
 host: api.github.com
@@ -28,20 +29,12 @@ paths:
         name: Accept
         description: Is used to set specified media type
       - in: query
+        name: access_token
+        description: Your Github OAuth token
+      - in: query
         name: since
         description: 'The time should be passed in as UTC in the ISO 8601 format:
           YYYY-MM-DDTHH:MM:SSZ'
-      - in: header
-        name: X-GitHub-Media-Type
-        description: You can check the current version of media type in responses
-      - in: header
-        name: X-GitHub-Request-Id
-      - in: header
-        name: X-RateLimit-Limit
-      - in: header
-        name: X-RateLimit-Remaining
-      - in: header
-        name: X-RateLimit-Reset
       responses:
         200:
           description: OK
@@ -1653,16 +1646,16 @@ definitions:
         type: get
 x-collection-name: GitHub
 x-streamrank:
-  polling_total_time_average: 0
-  polling_size_download_average: 0
-  streaming_total_time_average: 0
-  streaming_size_download_average: 0
-  change_yes: 0
-  change_no: 0
-  time_percentage: 0
-  size_percentage: 0
-  change_percentage: 0
-  last_run: ""
-  days_run: 0
-  minute_run: 0
+  polling_total_time_average: "0.28"
+  polling_size_download_average: "410971.49"
+  streaming_total_time_average: "0.15"
+  streaming_size_download_average: "205573.9"
+  change_yes: "3"
+  change_no: "2330"
+  time_percentage: "46"
+  size_percentage: "50"
+  change_percentage: "0"
+  last_run: "2018-05-12"
+  days_run: "8"
+  minute_run: "0"
 ---
