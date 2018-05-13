@@ -1,10 +1,34 @@
 ---
 swagger: "2.0"
 info:
-  title: Bitbucket
-  description: Code against the Bitbucket API to automate simple tasks, embed Bitbucket
-    data into your own site, build mobile or desktop apps, or even add custom UI add-ons
-    into Bitbucket itself using the Connect framework.
+  title: Bitbucket Add Repositories Username Repo Slug Branch Restrictions
+  description: |-
+    Creates a new branch restriction rule for a repository.
+
+    `kind` describes what will be restricted. Allowed values are: `push`,
+    `force`, `delete`, and `restrict_merges`.
+
+    Different kinds of branch restrictions have different requirements:
+
+    * `push` and `restrict_merges` require `users` and `groups` to be
+      specified. Empty lists are allowed, in which case permission is
+      denied for everybody.
+    * `force` can not be specified in a Mercurial repository.
+
+    `pattern` is used to determine which branches will be restricted.
+
+    A `'*'` in `pattern` will expand to match zero or more characters, and
+    every other character matches itself. For example, `'foo*'` will match
+    `'foo'` and `'foobar'`, but not `'barfoo'`. `'*'` will match all
+    branches.
+
+    `users` and `groups` are lists of user names and group names.
+
+    `kind` and `pattern` must be unique within a repository; adding new
+    users or groups to an existing restriction should be done via `PUT`.
+
+    Note that branch restrictions with overlapping patterns are allowed,
+    but the resulting behavior may be surprising.
   termsOfService: https://www.atlassian.com/legal/customer-agreement
   contact:
     name: Bitbucket Support
