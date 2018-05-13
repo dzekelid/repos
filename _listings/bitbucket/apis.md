@@ -26,47 +26,32 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/users-username-repositories-parameters.md
-- name: Bitbucket Add Repositories Username Repo Slug
+- name: Bitbucket Update Repositories Username Repo Slug
   description: |-
-    Creates a new repository.
+    Since this endpoint can be used to both update and to create a
+    repository, the request body depends on the intent.
 
-    Note: In order to set the project for the newly created repository,
-    pass in either the project key or the project UUID as part of the
-    request body as shown in the examples below:
+    ### Creation
 
-    ```
-    $ curl -X POST -H "Content-Type: application/json" -d '{
-        "scm": "git",
-        "project": {
-            "key": "MARS"
-        }
-    }' https://api.bitbucket.org/2.0/repositories/teamsinspace/hablanding
-    ```
+    See the POST documentation for the repository endpoint for an example
+    of the request body.
 
-    or
+    ### Update
 
-    ```
-    $ curl -X POST -H "Content-Type: application/json" -d '{
-        "scm": "git",
-        "project": {
-            "key": "{ba516952-992a-4c2d-acbd-17d502922f96}"
-        }
-    }' https://api.bitbucket.org/2.0/repositories/teamsinspace/hablanding
-    ```
-
-    The project must only be assigned for repositories belonging to a team.
-    If the repository owner is a team and the project is not provided, the
-    repository is automatically assigned to the oldest project in the team.
-
-    Note: In the examples above, the username `teamsinspace`,
-    and/or the repository name `hablanding` can be replaced by UUIDs.
+    Note: Changing the `name` of the repository will cause the location to
+    be changed. This is because the URL of the repo is derived from the
+    name (a process called slugification). In such a scenario, it is
+    possible for the request to fail if the newly created slug conflicts
+    with an existing repository's slug. But if there is no conflict,
+    the new location will be returned in the `Location` header of the
+    response.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/bitbucket-logo.png
   humanURL: https://bitbucket.org/
   baseURL: https://api.bitbucket.org//2.0
   tags: Repos
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/repositories-username-repo-slug-post.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/repositories-username-repo-slug-put.md
 x-common:
 - type: x-developer
   url: https://developer.atlassian.com/cloud/bitbucket/
