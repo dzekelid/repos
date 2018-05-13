@@ -83,23 +83,22 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repos-owner-repo-releases-assets-id-delete.md
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repos-owner-repo-releases-assets-id-delete-postman.md
-- name: Github Get Repos Owner Repo Archive Format Path
+- name: Github Get Repositories
   description: |-
-    Get archive link.
-    This method will return a 302 to a URL to download a tarball or zipball
-    archive for a repository. Please make sure your HTTP framework is
-    configured to follow redirects or you will need to use the Location header
-    to make a second GET request.
-    Note: For private repositories, these links are temporary and expire quickly.
+    List all public repositories.
+    This provides a dump of every public repository, in the order that they
+    were created.
+    Note: Pagination is powered exclusively by the since parameter. is the
+    Link header to get the URL for the next page of repositories.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
   humanURL: https://github.com
   baseURL: https://api.github.com//
   tags: Repos
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repos-owner-repo-archive-format-path-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repositories-get.md
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repos-owner-repo-archive-format-path-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repositories-get-postman.md
 x-common:
 - type: x-net-library
   url: https://github.com/octokit/octokit.net
