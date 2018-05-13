@@ -1,8 +1,12 @@
 ---
 swagger: "2.0"
 info:
-  title: Cloud Source Repositories
-  description: Access source code repositories hosted by Google.
+  title: Cloud Source Repositories API Create Repo
+  description: |-
+    Creates a repo in the given project with the given name..
+
+    If the named repository already exists, `CreateRepo` returns
+    `ALREADY_EXISTS`.
   contact:
     name: Google
     url: https://google.com
