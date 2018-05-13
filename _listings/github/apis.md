@@ -52,17 +52,17 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repos-owner-repo-downloads-downloadid-get.md
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repos-owner-repo-downloads-downloadid-get-postman.md
-- name: Github Add Repos Owner Repo Issues
-  description: |-
-    Create an issue.
-    Any user with pull access to a repository can create an issue.
+- name: Github Get Repos Owner Repo Issues Comments
+  description: List comments in a repository.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
   humanURL: https://github.com
   baseURL: https://api.github.com//
   tags: Repos
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repos-owner-repo-issues-post.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repos-owner-repo-issues-comments-get.md
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repos-owner-repo-issues-comments-get-postman.md
 x-common:
 - type: x-net-library
   url: https://github.com/octokit/octokit.net
