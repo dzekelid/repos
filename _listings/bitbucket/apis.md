@@ -26,18 +26,30 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/users-username-repositories-parameters.md
-- name: Bitbucket Parameters Repositories Username Repo Slug Commit Node Statuses
-    Build
-  description: Parameters repositories username repo slug commit node statuses build
+- name: Bitbucket Add Repositories Username Repo Slug Commit Node Statuses Build
+  description: |-
+    Creates a new build status against the specified commit.
+
+    If the specified key already exists, the existing status object will
+    be overwritten.
+
+    When creating a new commit status, you can use a URI template for the URL.
+    Templates are URLs that contain variable names that Bitbucket will
+    evaluate at runtime whenever the URL is displayed anywhere similar to
+    parameter substitution in
+    [Bitbucket Connect](https://developer.atlassian.com/bitbucket/concepts/context-parameters.html).
+    For example, one could use `https://foo.com/builds/{repository.full_name}`
+    which Bitbucket will turn into `https://foo.com/builds/foo/bar` at render time.
+    The context variables available are `repository` and `commit`.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/bitbucket-logo.png
   humanURL: https://bitbucket.org/
   baseURL: https://api.bitbucket.org//2.0
   tags: Repos
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/repositories-username-repo-slug-commit-node-statuses-build-parameters.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/repositories-username-repo-slug-commit-node-statuses-build-post.md
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/repositories-username-repo-slug-commit-node-statuses-build-parameters-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/repositories-username-repo-slug-commit-node-statuses-build-post-postman.md
 x-common:
 - type: x-developer
   url: https://developer.atlassian.com/cloud/bitbucket/
