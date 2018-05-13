@@ -73,17 +73,17 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/repositories-username-repo-slug-pipelines-pipeline-uuid-steps-step-uuid-log-get.md
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/repositories-username-repo-slug-pipelines-pipeline-uuid-steps-step-uuid-log-get-postman.md
-- name: Bitbucket Update Repositories Username Repo Slug Pipelines Config Ssh Known
-    Hosts Known Host Uu
-  description: Put repositories username repo slug pipelines config ssh known hosts
-    known host uu
+- name: Bitbucket Get Repositories Username Repo Slug Pipelines Config Variables
+  description: Get repositories username repo slug pipelines config variables
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/bitbucket-logo.png
   humanURL: https://bitbucket.org/
   baseURL: https://api.bitbucket.org//2.0
   tags: Repos
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/repositories-username-repo-slug-pipelines-config-ssh-known-hosts-known-host-uuid-put.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/repositories-username-repo-slug-pipelines-config-variables-get.md
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/repositories-username-repo-slug-pipelines-config-variables-get-postman.md
 x-common:
 - type: x-developer
   url: https://developer.atlassian.com/cloud/bitbucket/
