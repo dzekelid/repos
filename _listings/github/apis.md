@@ -72,19 +72,17 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repos-owner-repo-pulls-number-commits-get.md
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repos-owner-repo-pulls-number-commits-get-postman.md
-- name: Github Get Repos Owner Repo Releases
-  description: Users with push access to the repository will receive all releases
-    (i.e., published releases and draft releases). Users with pull access will receive
-    published releases only
+- name: Github Add Repos Owner Repo Releases
+  description: |-
+    Create a release
+    Users with push access to the repository can create a release.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
   humanURL: https://github.com
   baseURL: https://api.github.com//
   tags: Repos
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repos-owner-repo-releases-get.md
-  - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repos-owner-repo-releases-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repos-owner-repo-releases-post.md
 x-common:
 - type: x-net-library
   url: https://github.com/octokit/octokit.net
