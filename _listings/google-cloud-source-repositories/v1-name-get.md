@@ -1,8 +1,8 @@
 ---
 swagger: "2.0"
 info:
-  title: Cloud Source Repositories
-  description: Access source code repositories hosted by Google.
+  title: Cloud Source Repositories API Get Repo
+  description: Returns information about a repo.
   contact:
     name: Google
     url: https://google.com
