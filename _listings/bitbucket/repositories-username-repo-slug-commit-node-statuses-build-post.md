@@ -1,10 +1,21 @@
 ---
 swagger: "2.0"
 info:
-  title: Bitbucket
-  description: Code against the Bitbucket API to automate simple tasks, embed Bitbucket
-    data into your own site, build mobile or desktop apps, or even add custom UI add-ons
-    into Bitbucket itself using the Connect framework.
+  title: Bitbucket Add Repositories Username Repo Slug Commit Node Statuses Build
+  description: |-
+    Creates a new build status against the specified commit.
+
+    If the specified key already exists, the existing status object will
+    be overwritten.
+
+    When creating a new commit status, you can use a URI template for the URL.
+    Templates are URLs that contain variable names that Bitbucket will
+    evaluate at runtime whenever the URL is displayed anywhere similar to
+    parameter substitution in
+    [Bitbucket Connect](https://developer.atlassian.com/bitbucket/concepts/context-parameters.html).
+    For example, one could use `https://foo.com/builds/{repository.full_name}`
+    which Bitbucket will turn into `https://foo.com/builds/foo/bar` at render time.
+    The context variables available are `repository` and `commit`.
   termsOfService: https://www.atlassian.com/legal/customer-agreement
   contact:
     name: Bitbucket Support
