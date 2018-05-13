@@ -1,8 +1,8 @@
 ---
 swagger: "2.0"
 info:
-  title: Cloud Source Repositories
-  description: Access source code repositories hosted by Google.
+  title: Cloud Source Repositories API Delete Repo
+  description: Deletes a repo.
   contact:
     name: Google
     url: https://google.com
