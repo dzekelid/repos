@@ -34,15 +34,16 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/aws-ec2-container-registry-service/action-setrepositorypolicy-get.md
-- name: AWS EC2 Container Registry API Get Repository Policy
-  description: Retrieves the repository policy for a specified repository.
+- name: AWS EC2 Container Registry API Set Repository Policy
+  description: Applies a repository policy on a specified repository to control access
+    permissions.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Compute_AmazonECR.png
   humanURL: https://aws.amazon.com/ecr/
   baseURL: http:://{host}//
   tags: Repos
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/aws-ec2-container-registry-service/action-getrepositorypolicy-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/aws-ec2-container-registry-service/action-setrepositorypolicy-get.md
 x-common:
 - type: x-documentation
   url: http://docs.aws.amazon.com/AmazonECR/latest/APIReference/Welcome.html
