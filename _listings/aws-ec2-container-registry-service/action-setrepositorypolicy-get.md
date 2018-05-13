@@ -1,8 +1,10 @@
 ---
 swagger: "2.0"
 info:
-  title: AWS EC2 Container Registry API
+  title: AWS EC2 Container Registry API Set Repository Policy
   version: 1.0.0
+  description: Applies a repository policy on a specified repository to control access
+    permissions.
 schemes:
 - http
 produces:
