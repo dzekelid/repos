@@ -1,8 +1,9 @@
 ---
 swagger: "2.0"
 info:
-  title: AWS CodeCommit API
+  title: AWS CodeCommit API Put Repository Triggers
   version: 1.0.0
+  description: Replaces all triggers for a repository.
 schemes:
 - http
 produces:
