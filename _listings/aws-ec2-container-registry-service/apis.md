@@ -34,15 +34,15 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/aws-ec2-container-registry-service/action-setrepositorypolicy-get.md
-- name: AWS EC2 Container Registry API Describe Repositories
-  description: Describes image repositories in a registry.
+- name: AWS EC2 Container Registry API Get Repository Policy
+  description: Retrieves the repository policy for a specified repository.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Compute_AmazonECR.png
   humanURL: https://aws.amazon.com/ecr/
   baseURL: http:://{host}//
   tags: Repos
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/aws-ec2-container-registry-service/action-describerepositories-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/aws-ec2-container-registry-service/action-getrepositorypolicy-get.md
 x-common:
 - type: x-documentation
   url: http://docs.aws.amazon.com/AmazonECR/latest/APIReference/Welcome.html
