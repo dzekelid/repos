@@ -28,15 +28,15 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/aws-codecommit/action-updaterepositoryname-get.md
-- name: AWS CodeCommit API Update Repository Description
-  description: Sets or changes the comment or description for a repository.
+- name: AWS CodeCommit API Update Repository Name
+  description: Renames a repository.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Developer-Tools_AWSCodeCommit.png
   humanURL: https://aws.amazon.com/codecommit/
   baseURL: http:://{host}//
   tags: Repos
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/aws-codecommit/action-updaterepositorydescription-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/aws-codecommit/action-updaterepositoryname-get.md
 x-common:
 - type: x-command-line-interface
   url: http://docs.aws.amazon.com/cli/latest/reference/codecommit/index.html
