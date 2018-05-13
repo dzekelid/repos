@@ -1,10 +1,13 @@
 ---
 swagger: "2.0"
 info:
-  title: Bitbucket
-  description: Code against the Bitbucket API to automate simple tasks, embed Bitbucket
-    data into your own site, build mobile or desktop apps, or even add custom UI add-ons
-    into Bitbucket itself using the Connect framework.
+  title: Bitbucket Update Repositories Username Repo Slug Pullrequests Pull Request
+  description: |-
+    Mutates the specified pull request.
+
+    This can be used to change the pull request's branches or description.
+
+    Only open pull requests can be mutated.
   termsOfService: https://www.atlassian.com/legal/customer-agreement
   contact:
     name: Bitbucket Support
