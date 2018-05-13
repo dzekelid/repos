@@ -34,17 +34,18 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/google-cloud-source-repositories/v1-resource-testiampermissions-post.md
-- name: Cloud Source Repositories API Set Access Control Policy
+- name: Cloud Source Repositories API Return Permissions
   description: |-
-    Sets the access control policy on the specified resource. Replaces any
-    existing policy.
+    Returns permissions that a caller has on the specified resource.
+    If the resource does not exist, this will return an empty set of
+    permissions, not a NOT_FOUND error.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/google-cloud-repositories.png
   humanURL: https://cloud.google.com/source-repositories/
   baseURL: http:://sourcerepo.googleapis.com//
   tags: Repos
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/google-cloud-source-repositories/v1-resource-setiampolicy-post.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/google-cloud-source-repositories/v1-resource-testiampermissions-post.md
 x-common:
 - type: x-concepts
   url: https://cloud.google.com/source-repositories/docs/concepts
