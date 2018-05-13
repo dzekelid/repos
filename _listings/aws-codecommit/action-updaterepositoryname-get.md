@@ -1,8 +1,9 @@
 ---
 swagger: "2.0"
 info:
-  title: AWS CodeCommit API
+  title: AWS CodeCommit API Update Repository Name
   version: 1.0.0
+  description: Renames a repository.
 schemes:
 - http
 produces:
