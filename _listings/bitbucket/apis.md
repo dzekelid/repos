@@ -84,20 +84,21 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/repositories-username-repo-slug-pipelines-config-variables-variable-uuid-put.md
-- name: Bitbucket Update Repositories Username Repo Slug Pullrequests Pull Request
+- name: Bitbucket Get Repositories Username Repo Slug Pullrequests Pull Request  Activity
   description: |-
-    Mutates the specified pull request.
+    Returns a paginated list of the pull request's activity log.
 
-    This can be used to change the pull request's branches or description.
-
-    Only open pull requests can be mutated.
+    This includes comments that were made by the reviewers, updates and
+    approvals.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/bitbucket-logo.png
   humanURL: https://bitbucket.org/
   baseURL: https://api.bitbucket.org//2.0
   tags: Repos
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/repositories-username-repo-slug-pullrequests-pull-request-id-put.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/repositories-username-repo-slug-pullrequests-pull-request-id-activity-get.md
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/repositories-username-repo-slug-pullrequests-pull-request-id-activity-get-postman.md
 x-common:
 - type: x-developer
   url: https://developer.atlassian.com/cloud/bitbucket/
