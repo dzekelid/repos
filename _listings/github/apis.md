@@ -41,15 +41,20 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/users-username-repos-get.md
-- name: Github Patch Repos Owner Repo
-  description: Edit repository.
+- name: Github Get Repos Owner Repo Assignees
+  description: |-
+    List assignees.
+    This call lists all the available assignees (owner + collaborators) to which
+    issues may be assigned.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
   humanURL: https://github.com
   baseURL: https://api.github.com//
   tags: Repos
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repos-owner-repo-patch.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repos-owner-repo-assignees-get.md
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repos-owner-repo-assignees-get-postman.md
 x-common:
 - type: x-net-library
   url: https://github.com/octokit/octokit.net
