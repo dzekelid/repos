@@ -70,20 +70,17 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/repositories-username-repo-slug-issues-issue-id-comments-comment-id-parameters.md
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/repositories-username-repo-slug-issues-issue-id-comments-comment-id-parameters-postman.md
-- name: Bitbucket Get Repositories Username Repo Slug Issues Issue  Vote
-  description: |-
-    Check whether the authenticated user has voted for this issue.
-    A 204 status code indicates that the user has voted, while a 404
-    implies they haven't.
+- name: Bitbucket Parameters Repositories Username Repo Slug Issues Issue  Vote
+  description: Parameters repositories username repo slug issues issue  vote
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/bitbucket-logo.png
   humanURL: https://bitbucket.org/
   baseURL: https://api.bitbucket.org//2.0
   tags: Repos
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/repositories-username-repo-slug-issues-issue-id-vote-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/repositories-username-repo-slug-issues-issue-id-vote-parameters.md
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/repositories-username-repo-slug-issues-issue-id-vote-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/repositories-username-repo-slug-issues-issue-id-vote-parameters-postman.md
 x-common:
 - type: x-developer
   url: https://developer.atlassian.com/cloud/bitbucket/
