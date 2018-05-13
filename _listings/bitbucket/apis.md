@@ -42,7 +42,69 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/repositories-username-repo-slug-commits-post.md
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/repositories-username-repo-slug-commits-post-postman.md
+- name: Bitbucket Get Repositories Username Repo Slug Commits Revision
+  description: |-
+    These are the repository's commits. They are paginated and returned
+    in reverse chronological order, similar to the output of `git log` and
+    `hg log`. Like these tools, the DAG can be filtered.
+
+    ## GET /repositories/{username}/{repo_slug}/commits/
+
+    Returns all commits in the repo in topological order (newest commit
+    first). All branches and tags are included (similar to
+    `git log --all` and `hg log`).
+
+    ## GET /repositories/{username}/{repo_slug}/commits/master
+
+    Returns all commits on rev `master` (similar to `git log master`,
+    `hg log master`).
+
+    ## GET /repositories/{username}/{repo_slug}/commits/dev?exclude=master
+
+    Returns all commits on ref `dev`, except those that are reachable on
+    `master` (similar to `git log dev ^master`).
+
+    ## GET /repositories/{username}/{repo_slug}/commits/?exclude=master
+
+    Returns all commits in the repo that are not on master
+    (similar to `git log --all ^master`).
+
+    ## GET /repositories/{username}/{repo_slug}/commits/?include=foo&include=bar&exclude=fu&exclude=fubar
+
+    Returns all commits that are on refs `foo` or `bar`, but not on `fu` or
+    `fubar` (similar to `git log foo bar ^fu ^fubar`).
+
+    Because the response could include a very large number of commits, it
+    is paginated. Follow the 'next' link in the response to navigate to the
+    next page of commits. As with other paginated resources, do not
+    construct your own links.
+
+    When the include and exclude parameters are more than can fit in a
+    query string, clients can use a `x-www-form-urlencoded` POST instead.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/bitbucket-logo.png
+  humanURL: https://bitbucket.org/
+  baseURL: https://api.bitbucket.org//2.0
+  tags: Repos
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/repositories-username-repo-slug-commits-revision-get.md
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/repositories-username-repo-slug-commits-revision-get-postman.md
 x-common:
+- type: x-developer
+  url: https://developer.atlassian.com/cloud/bitbucket/
+- type: x-documentation
+  url: https://confluence.atlassian.com/bitbucket/bitbucket-cloud-documentation-221448814.html?_ga=2.77295890.629375793.1519179030-1077111323.1516485126
+- type: x-status
+  url: https://status.bitbucket.org/?_ga=2.76365714.629375793.1519179030-1077111323.1516485126
+- type: x-support
+  url: https://support.atlassian.com/bitbucket-cloud/
+- type: x-terms-of-service
+  url: https://www.atlassian.com/legal/customer-agreement?_ga=2.76365714.629375793.1519179030-1077111323.1516485126
+- type: x-twitter
+  url: https://twitter.com/bitbucket
+- type: x-website
+  url: https://bitbucket.org/
 - type: x-developer
   url: https://developer.atlassian.com/cloud/bitbucket/
 - type: x-documentation
