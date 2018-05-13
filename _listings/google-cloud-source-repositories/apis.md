@@ -34,20 +34,17 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/google-cloud-source-repositories/v1-resource-testiampermissions-post.md
-- name: Cloud Source Repositories API Get Access Control Policy
+- name: Cloud Source Repositories API Set Access Control Policy
   description: |-
-    Gets the access control policy for a resource.
-    Returns an empty policy if the resource exists and does not have a policy
-    set.
+    Sets the access control policy on the specified resource. Replaces any
+    existing policy.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/google-cloud-repositories.png
   humanURL: https://cloud.google.com/source-repositories/
   baseURL: http:://sourcerepo.googleapis.com//
   tags: Repos
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/google-cloud-source-repositories/v1-resource-getiampolicy-get.md
-  - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/google-cloud-source-repositories/v1-resource-getiampolicy-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/google-cloud-source-repositories/v1-resource-setiampolicy-post.md
 x-common:
 - type: x-concepts
   url: https://cloud.google.com/source-repositories/docs/concepts
