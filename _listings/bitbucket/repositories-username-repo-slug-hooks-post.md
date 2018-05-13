@@ -1,10 +1,32 @@
 ---
 swagger: "2.0"
 info:
-  title: Bitbucket
-  description: Code against the Bitbucket API to automate simple tasks, embed Bitbucket
-    data into your own site, build mobile or desktop apps, or even add custom UI add-ons
-    into Bitbucket itself using the Connect framework.
+  title: Bitbucket Add Repositories Username Repo Slug Hooks
+  description: |-
+    Creates a new webhook on the specified repository.
+
+    Example:
+
+    ```
+    $ curl -X POST -u credentials -H 'Content-Type: application/json'           https://api.bitbucket.org/2.0/repositories/username/slug/hooks           -d '
+        {
+          "description": "Webhook Description",
+          "url": "https://example.com/",
+          "active": true,
+          "events": [
+            "repo:push",
+            "issue:created",
+            "issue:updated"
+          ]
+        }'
+    ```
+
+    Note that this call requires the webhook scope, as well as any scope
+    that applies to the events that the webhook subscribes to. In the
+    example above that means: `webhook`, `repository` and `issue`.
+
+    Also note that the `url` must properly resolve and cannot be an
+    internal, non-routed address.
   termsOfService: https://www.atlassian.com/legal/customer-agreement
   contact:
     name: Bitbucket Support
