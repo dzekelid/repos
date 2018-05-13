@@ -41,20 +41,19 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/users-username-repos-get.md
-- name: Github Get Repos Owner Repo Assignees
+- name: Github Get Repos Owner Repo Assignees Assignee
   description: |-
-    List assignees.
-    This call lists all the available assignees (owner + collaborators) to which
-    issues may be assigned.
+    Check assignee.
+    You may also check to see if a particular user is an assignee for a repository.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
   humanURL: https://github.com
   baseURL: https://api.github.com//
   tags: Repos
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repos-owner-repo-assignees-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repos-owner-repo-assignees-assignee-get.md
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repos-owner-repo-assignees-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repos-owner-repo-assignees-assignee-get-postman.md
 x-common:
 - type: x-net-library
   url: https://github.com/octokit/octokit.net
