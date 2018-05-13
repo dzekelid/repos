@@ -73,17 +73,17 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/repositories-username-repo-slug-pipelines-pipeline-uuid-steps-step-uuid-log-get.md
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/repositories-username-repo-slug-pipelines-pipeline-uuid-steps-step-uuid-log-get-postman.md
-- name: Bitbucket Parameters Repositories Username Repo Slug Pullrequests Pull Request  Activity
-  description: Parameters repositories username repo slug pullrequests pull request  activity
+- name: Bitbucket Delete Repositories Username Repo Slug Pullrequests Pull Request  Approve
+  description: Delete repositories username repo slug pullrequests pull request  approve
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/bitbucket-logo.png
   humanURL: https://bitbucket.org/
   baseURL: https://api.bitbucket.org//2.0
   tags: Repos
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/repositories-username-repo-slug-pullrequests-pull-request-id-activity-parameters.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/repositories-username-repo-slug-pullrequests-pull-request-id-approve-delete.md
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/repositories-username-repo-slug-pullrequests-pull-request-id-activity-parameters-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/repositories-username-repo-slug-pullrequests-pull-request-id-approve-delete-postman.md
 x-common:
 - type: x-developer
   url: https://developer.atlassian.com/cloud/bitbucket/
