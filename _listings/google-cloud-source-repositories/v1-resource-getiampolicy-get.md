@@ -1,8 +1,11 @@
 ---
 swagger: "2.0"
 info:
-  title: Cloud Source Repositories
-  description: Access source code repositories hosted by Google.
+  title: Cloud Source Repositories API Get Access Control Policy
+  description: |-
+    Gets the access control policy for a resource.
+    Returns an empty policy if the resource exists and does not have a policy
+    set.
   contact:
     name: Google
     url: https://google.com
