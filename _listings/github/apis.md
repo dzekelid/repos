@@ -83,19 +83,17 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/search-repositories-get.md
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/search-repositories-get-postman.md
-- name: Github Delete Teams Team Repos Owner Repo
-  description: 'In order to remove a repository from a team, the authenticated user
-    must be an owner of the org that the team is associated with. NOTE: This does
-    not delete the repository, it just removes it from the team.'
+- name: Github Get Teams Team Repos Owner Repo
+  description: Check if a team manages a repository
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
   humanURL: https://github.com
   baseURL: https://api.github.com//
   tags: Repos
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/teams-teamid-repos-owner-repo-delete.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/teams-teamid-repos-owner-repo-get.md
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/teams-teamid-repos-owner-repo-delete-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/teams-teamid-repos-owner-repo-get-postman.md
 x-common:
 - type: x-net-library
   url: https://github.com/octokit/octokit.net
