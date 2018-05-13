@@ -58,17 +58,23 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/repositories-username-repo-slug-issues-post.md
-- name: Bitbucket Parameters Repositories Username Repo Slug Issues Issue
-  description: Parameters repositories username repo slug issues issue
+- name: Bitbucket Get Repositories Username Repo Slug Issues Issue  Attachments
+  description: |-
+    Returns all attachments for this issue.
+
+    This returns the files' meta data. This does not return the files'
+    actual contents.
+
+    The files are always ordered by their upload date.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/bitbucket-logo.png
   humanURL: https://bitbucket.org/
   baseURL: https://api.bitbucket.org//2.0
   tags: Repos
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/repositories-username-repo-slug-issues-issue-id-parameters.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/repositories-username-repo-slug-issues-issue-id-attachments-get.md
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/repositories-username-repo-slug-issues-issue-id-parameters-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/repositories-username-repo-slug-issues-issue-id-attachments-get-postman.md
 x-common:
 - type: x-developer
   url: https://developer.atlassian.com/cloud/bitbucket/
