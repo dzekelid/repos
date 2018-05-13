@@ -1,8 +1,10 @@
 ---
 swagger: "2.0"
 info:
-  title: AWS CodeCommit API
+  title: AWS CodeCommit API Test Repository Triggers
   version: 1.0.0
+  description: Tests the functionality of repository triggers by sending information
+    to the trigger target.
 schemes:
 - http
 produces:
