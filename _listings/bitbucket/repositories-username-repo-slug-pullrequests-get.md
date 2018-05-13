@@ -1,10 +1,16 @@
 ---
 swagger: "2.0"
 info:
-  title: Bitbucket
-  description: Code against the Bitbucket API to automate simple tasks, embed Bitbucket
-    data into your own site, build mobile or desktop apps, or even add custom UI add-ons
-    into Bitbucket itself using the Connect framework.
+  title: Bitbucket Get Repositories Username Repo Slug Pullrequests
+  description: |-
+    Returns a paginated list of all pull requests on the specified
+    repository. By default only open pull requests are returned. This can
+    be controlled using the `state` query parameter. To retrieve pull
+    requests that are in one of multiple states, repeat the `state`
+    parameter for each individual state.
+
+    This endpoint also supports filtering and sorting of the results. See
+    [filtering and sorting](../../../../meta/filtering) for more details.
   termsOfService: https://www.atlassian.com/legal/customer-agreement
   contact:
     name: Bitbucket Support
