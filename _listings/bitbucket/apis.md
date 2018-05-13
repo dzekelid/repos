@@ -42,17 +42,17 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/repositories-username-repo-slug-commits-post.md
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/repositories-username-repo-slug-commits-post-postman.md
-- name: Bitbucket Get Repositories Username Repo Slug Hooks
-  description: Returns a paginated list of webhooks installed on this repository.
+- name: Bitbucket Parameters Repositories Username Repo Slug Hooks
+  description: Parameters repositories username repo slug hooks
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/bitbucket-logo.png
   humanURL: https://bitbucket.org/
   baseURL: https://api.bitbucket.org//2.0
   tags: Repos
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/repositories-username-repo-slug-hooks-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/repositories-username-repo-slug-hooks-parameters.md
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/repositories-username-repo-slug-hooks-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/repositories-username-repo-slug-hooks-parameters-postman.md
 x-common:
 - type: x-developer
   url: https://developer.atlassian.com/cloud/bitbucket/
