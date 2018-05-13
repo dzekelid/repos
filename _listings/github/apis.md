@@ -41,17 +41,19 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/users-username-repos-get.md
-- name: Github Get Legacy Issues Search Owner Repository State Keyword
-  description: Find issues by state and keyword.
+- name: Github Get Legacy Repos Search Keyword
+  description: Find repositories by keyword. Note, this legacy method does not follow
+    the v3 pagination pattern. This method returns up to 100 results per page and
+    pages can be fetched using the start_page parameter.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
   humanURL: https://github.com
   baseURL: https://api.github.com//
   tags: Repos
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/legacy-issues-search-owner-repository-state-keyword-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/legacy-repos-search-keyword-get.md
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/legacy-issues-search-owner-repository-state-keyword-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/legacy-repos-search-keyword-get-postman.md
 x-common:
 - type: x-net-library
   url: https://github.com/octokit/octokit.net
