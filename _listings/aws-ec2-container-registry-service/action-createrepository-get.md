@@ -1,8 +1,9 @@
 ---
 swagger: "2.0"
 info:
-  title: AWS EC2 Container Registry API
+  title: AWS EC2 Container Registry API Create Repository
   version: 1.0.0
+  description: Creates an image repository.
 schemes:
 - http
 produces:
