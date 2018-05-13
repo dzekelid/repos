@@ -1,10 +1,15 @@
 ---
 swagger: "2.0"
 info:
-  title: Bitbucket
-  description: Code against the Bitbucket API to automate simple tasks, embed Bitbucket
-    data into your own site, build mobile or desktop apps, or even add custom UI add-ons
-    into Bitbucket itself using the Connect framework.
+  title: Bitbucket Add Repositories Username Repo Slug Issues Issue  Attachments
+  description: |-
+    Upload new issue attachments.
+
+    To upload files, perform a `multipart/form-data` POST containing one
+    or more file fields.
+
+    When a file is uploaded with the same name as an existing attachment,
+    then the existing file will be replaced.
   termsOfService: https://www.atlassian.com/legal/customer-agreement
   contact:
     name: Bitbucket Support
