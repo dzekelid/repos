@@ -1,10 +1,14 @@
 ---
 swagger: "2.0"
 info:
-  title: Bitbucket
-  description: Code against the Bitbucket API to automate simple tasks, embed Bitbucket
-    data into your own site, build mobile or desktop apps, or even add custom UI add-ons
-    into Bitbucket itself using the Connect framework.
+  title: Bitbucket Get Repositories Username Repo Slug Issues Issue  Attachments
+  description: |-
+    Returns all attachments for this issue.
+
+    This returns the files' meta data. This does not return the files'
+    actual contents.
+
+    The files are always ordered by their upload date.
   termsOfService: https://www.atlassian.com/legal/customer-agreement
   contact:
     name: Bitbucket Support
