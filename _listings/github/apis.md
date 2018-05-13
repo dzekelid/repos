@@ -83,17 +83,17 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repos-owner-repo-releases-assets-id-delete.md
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repos-owner-repo-releases-assets-id-delete-postman.md
-- name: Github Patch Repos Owner Repo Releases Assets
-  description: |-
-    Edit a release asset
-    Users with push access to the repository can edit a release asset.
+- name: Github Delete Repos Owner Repo Releases
+  description: Users with push access to the repository can delete a release.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
   humanURL: https://github.com
   baseURL: https://api.github.com//
   tags: Repos
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repos-owner-repo-releases-assets-id-patch.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repos-owner-repo-releases-id-delete.md
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repos-owner-repo-releases-id-delete-postman.md
 x-common:
 - type: x-net-library
   url: https://github.com/octokit/octokit.net
