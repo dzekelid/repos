@@ -61,26 +61,17 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repos-owner-repo-issues-number-comments-post.md
-- name: Github Add Repos Owner Repo Pulls Number Comments
-  description: |-
-    Create a comment.
-      #TODO Alternative input ( http://developer.github.com/v3/pulls/comments/ )
-      description: |
-        Alternative Input.
-        Instead of passing commit_id, path, and position you can reply to an
-        existing Pull Request Comment like this:
-
-            body
-               Required string
-            in_reply_to
-               Required number - Comment id to reply to.
+- name: Github Get Repos Owner Repo Pulls Number Commits
+  description: List commits on a pull request.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
   humanURL: https://github.com
   baseURL: https://api.github.com//
   tags: Repos
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repos-owner-repo-pulls-number-comments-post.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repos-owner-repo-pulls-number-commits-get.md
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repos-owner-repo-pulls-number-commits-get-postman.md
 x-common:
 - type: x-net-library
   url: https://github.com/octokit/octokit.net
