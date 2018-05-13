@@ -58,44 +58,36 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/repositories-username-repo-slug-issues-post.md
-- name: Bitbucket Parameters Repositories Username Repo Slug Issues Issue  Comments
-    Comment
-  description: Parameters repositories username repo slug issues issue  comments comment
+- name: Bitbucket Get Repositories Username Repo Slug Patch Spec
+  description: |-
+    Produces a raw patch for a single commit (diffed against its first
+    parent), or a patch-series for a revspec of 2 commits (e.g.
+    `3a8b42..9ff173` where the first commit represents the source and the
+    second commit the destination).
+
+    In case of the latter (diffing a revspec), a patch series is returned
+    for the commits on the source branch (`3a8b42` and its ancestors in
+    our example). For Mercurial, a single patch is returned that combines
+    the changes of all commits on the source branch.
+
+    While similar to diffs, patches:
+
+    * Have a commit header (username, commit message, etc)
+    * Do not support the `path=foo/bar.py` query parameter
+
+    The raw patch is returned as-is, in whatever encoding the files in the
+    repository use. It is not decoded into unicode. As such, the
+    content-type is `text/plain`.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/bitbucket-logo.png
   humanURL: https://bitbucket.org/
   baseURL: https://api.bitbucket.org//2.0
   tags: Repos
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/repositories-username-repo-slug-issues-issue-id-comments-comment-id-parameters.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/repositories-username-repo-slug-patch-spec-get.md
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/repositories-username-repo-slug-issues-issue-id-comments-comment-id-parameters-postman.md
-- name: Bitbucket Parameters Repositories Username Repo Slug Milestones Milestone
-  description: Parameters repositories username repo slug milestones milestone
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/bitbucket-logo.png
-  humanURL: https://bitbucket.org/
-  baseURL: https://api.bitbucket.org//2.0
-  tags: Repos
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/repositories-username-repo-slug-milestones-milestone-id-parameters.md
-  - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/repositories-username-repo-slug-milestones-milestone-id-parameters-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/repositories-username-repo-slug-patch-spec-get-postman.md
 x-common:
-- type: x-developer
-  url: https://developer.atlassian.com/cloud/bitbucket/
-- type: x-documentation
-  url: https://confluence.atlassian.com/bitbucket/bitbucket-cloud-documentation-221448814.html?_ga=2.77295890.629375793.1519179030-1077111323.1516485126
-- type: x-status
-  url: https://status.bitbucket.org/?_ga=2.76365714.629375793.1519179030-1077111323.1516485126
-- type: x-support
-  url: https://support.atlassian.com/bitbucket-cloud/
-- type: x-terms-of-service
-  url: https://www.atlassian.com/legal/customer-agreement?_ga=2.76365714.629375793.1519179030-1077111323.1516485126
-- type: x-twitter
-  url: https://twitter.com/bitbucket
-- type: x-website
-  url: https://bitbucket.org/
 - type: x-developer
   url: https://developer.atlassian.com/cloud/bitbucket/
 - type: x-documentation
