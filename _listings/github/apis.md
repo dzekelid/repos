@@ -52,17 +52,19 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repos-owner-repo-downloads-downloadid-get.md
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repos-owner-repo-downloads-downloadid-get-postman.md
-- name: Github Get Repos Owner Repo Forks
-  description: List forks.
+- name: Github Add Repos Owner Repo Forks
+  description: |-
+    Create a fork.
+    Forking a Repository happens asynchronously. Therefore, you may have to wai
+    a short period before accessing the git objects. If this takes longer than 5
+    minutes, be sure to contact Support.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
   humanURL: https://github.com
   baseURL: https://api.github.com//
   tags: Repos
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repos-owner-repo-forks-get.md
-  - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repos-owner-repo-forks-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repos-owner-repo-forks-post.md
 x-common:
 - type: x-net-library
   url: https://github.com/octokit/octokit.net
