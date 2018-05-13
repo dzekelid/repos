@@ -61,20 +61,15 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repos-owner-repo-issues-number-comments-post.md
-- name: Github Get Repos Owner Repo Languages
-  description: |-
-    List languages.
-    List languages for the specified repository. The value on the right of a
-    language is the number of bytes of code written in that language.
+- name: Github Add Repos Owner Repo Merges
+  description: Perform a merge.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
   humanURL: https://github.com
   baseURL: https://api.github.com//
   tags: Repos
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repos-owner-repo-languages-get.md
-  - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repos-owner-repo-languages-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repos-owner-repo-merges-post.md
 x-common:
 - type: x-net-library
   url: https://github.com/octokit/octokit.net
