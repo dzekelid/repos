@@ -1,10 +1,25 @@
 ---
 swagger: "2.0"
 info:
-  title: Bitbucket
-  description: Code against the Bitbucket API to automate simple tasks, embed Bitbucket
-    data into your own site, build mobile or desktop apps, or even add custom UI add-ons
-    into Bitbucket itself using the Connect framework.
+  title: Bitbucket Add Repositories Username Repo Slug Refs Tags
+  description: |-
+    Creates a new tag in the specified repository.
+
+    The payload of the POST should consist of a JSON document that
+    contains the name of the tag and the target hash.
+
+    ```
+    {
+        "name" : "new tag name",
+        "target" : {
+            "hash" : "target commit hash",
+        }
+    }
+    ```
+
+    This endpoint does support using short hash prefixes for the commit
+    hash, but it may return a 400 response if the provided prefix is
+    ambiguous. Using a full commit hash is the preferred approach.
   termsOfService: https://www.atlassian.com/legal/customer-agreement
   contact:
     name: Bitbucket Support
