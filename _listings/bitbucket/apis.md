@@ -84,25 +84,17 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/repositories-username-repo-slug-pipelines-config-variables-variable-uuid-put.md
-- name: Bitbucket Get Repositories Username Repo Slug Pullrequests
-  description: |-
-    Returns a paginated list of all pull requests on the specified
-    repository. By default only open pull requests are returned. This can
-    be controlled using the `state` query parameter. To retrieve pull
-    requests that are in one of multiple states, repeat the `state`
-    parameter for each individual state.
-
-    This endpoint also supports filtering and sorting of the results. See
-    [filtering and sorting](../../../../meta/filtering) for more details.
+- name: Bitbucket Parameters Repositories Username Repo Slug Pullrequests
+  description: Parameters repositories username repo slug pullrequests
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/bitbucket-logo.png
   humanURL: https://bitbucket.org/
   baseURL: https://api.bitbucket.org//2.0
   tags: Repos
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/repositories-username-repo-slug-pullrequests-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/repositories-username-repo-slug-pullrequests-parameters.md
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/repositories-username-repo-slug-pullrequests-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/repositories-username-repo-slug-pullrequests-parameters-postman.md
 x-common:
 - type: x-developer
   url: https://developer.atlassian.com/cloud/bitbucket/
