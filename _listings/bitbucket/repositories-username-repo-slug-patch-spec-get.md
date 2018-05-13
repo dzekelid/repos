@@ -1,10 +1,26 @@
 ---
 swagger: "2.0"
 info:
-  title: Bitbucket
-  description: Code against the Bitbucket API to automate simple tasks, embed Bitbucket
-    data into your own site, build mobile or desktop apps, or even add custom UI add-ons
-    into Bitbucket itself using the Connect framework.
+  title: Bitbucket Get Repositories Username Repo Slug Patch Spec
+  description: |-
+    Produces a raw patch for a single commit (diffed against its first
+    parent), or a patch-series for a revspec of 2 commits (e.g.
+    `3a8b42..9ff173` where the first commit represents the source and the
+    second commit the destination).
+
+    In case of the latter (diffing a revspec), a patch series is returned
+    for the commits on the source branch (`3a8b42` and its ancestors in
+    our example). For Mercurial, a single patch is returned that combines
+    the changes of all commits on the source branch.
+
+    While similar to diffs, patches:
+
+    * Have a commit header (username, commit message, etc)
+    * Do not support the `path=foo/bar.py` query parameter
+
+    The raw patch is returned as-is, in whatever encoding the files in the
+    repository use. It is not decoded into unicode. As such, the
+    content-type is `text/plain`.
   termsOfService: https://www.atlassian.com/legal/customer-agreement
   contact:
     name: Bitbucket Support
