@@ -41,17 +41,17 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/users-username-repos-get.md
-- name: Github Get Orgs Org Repos
-  description: List repositories for the specified org.
+- name: Github Add Orgs Org Repos
+  description: |-
+    Create a new repository for the authenticated user. OAuth users must supply
+    repo scope.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
   humanURL: https://github.com
   baseURL: https://api.github.com//
   tags: Repos
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/orgs-org-repos-get.md
-  - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/orgs-org-repos-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/orgs-org-repos-post.md
 x-common:
 - type: x-net-library
   url: https://github.com/octokit/octokit.net
