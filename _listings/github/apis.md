@@ -61,15 +61,17 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repos-owner-repo-issues-number-comments-post.md
-- name: Github Patch Repos Owner Repo Pulls Number
-  description: Update a pull request.
+- name: Github Get Repos Owner Repo Pulls Number Comments
+  description: List comments on a pull request.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
   humanURL: https://github.com
   baseURL: https://api.github.com//
   tags: Repos
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repos-owner-repo-pulls-number-patch.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repos-owner-repo-pulls-number-comments-get.md
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repos-owner-repo-pulls-number-comments-get-postman.md
 x-common:
 - type: x-net-library
   url: https://github.com/octokit/octokit.net
