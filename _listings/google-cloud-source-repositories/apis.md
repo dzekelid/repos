@@ -34,17 +34,17 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/google-cloud-source-repositories/v1-resource-testiampermissions-post.md
-- name: Cloud Source Repositories API Get Repo
-  description: Returns information about a repo.
+- name: Cloud Source Repositories API Get Repos
+  description: Returns all repos belonging to a project.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/google-cloud-repositories.png
   humanURL: https://cloud.google.com/source-repositories/
   baseURL: http:://sourcerepo.googleapis.com//
   tags: Repos
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/google-cloud-source-repositories/v1-name-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/google-cloud-source-repositories/v1-name-repos-get.md
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/google-cloud-source-repositories/v1-name-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/google-cloud-source-repositories/v1-name-repos-get-postman.md
 x-common:
 - type: x-concepts
   url: https://cloud.google.com/source-repositories/docs/concepts
