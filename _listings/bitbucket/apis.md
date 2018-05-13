@@ -73,18 +73,19 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/repositories-username-repo-slug-pipelines-pipeline-uuid-steps-step-uuid-log-get.md
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/repositories-username-repo-slug-pipelines-pipeline-uuid-steps-step-uuid-log-get-postman.md
-- name: Bitbucket Delete Repositories Username Repo Slug Pipelines Config Ssh Key
-    Pair
-  description: Delete repositories username repo slug pipelines config ssh key pair
+- name: Bitbucket Get Repositories Username Repo Slug Pipelines Config Ssh Key Pair
+  description: Retrieve the repository SSH key pair excluding the SSH private key.
+    The private key is a write only field and will never be exposed in the logs or
+    the REST API.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/bitbucket-logo.png
   humanURL: https://bitbucket.org/
   baseURL: https://api.bitbucket.org//2.0
   tags: Repos
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/repositories-username-repo-slug-pipelines-config-ssh-key-pair-delete.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/repositories-username-repo-slug-pipelines-config-ssh-key-pair-get.md
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/repositories-username-repo-slug-pipelines-config-ssh-key-pair-delete-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/bitbucket/repositories-username-repo-slug-pipelines-config-ssh-key-pair-get-postman.md
 x-common:
 - type: x-developer
   url: https://developer.atlassian.com/cloud/bitbucket/
