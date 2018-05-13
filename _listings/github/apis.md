@@ -52,21 +52,17 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repos-owner-repo-downloads-downloadid-get.md
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repos-owner-repo-downloads-downloadid-get-postman.md
-- name: Github Add Repos Owner Repo Git Tags
-  description: |-
-    Create a Tag Object.
-    Note that creating a tag object does not create the reference that makes a
-    tag in Git. If you want to create an annotated tag in Git, you have to do
-    this call to create the tag object, and then create the refs/tags/[tag]
-    reference. If you want to create a lightweight tag, you only have to create
-    the tag reference - this call would be unnecessary.
+- name: Github Get Repos Owner Repo Git Tags Shacode
+  description: Get a Tag.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
   humanURL: https://github.com
   baseURL: https://api.github.com//
   tags: Repos
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repos-owner-repo-git-tags-post.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repos-owner-repo-git-tags-shacode-get.md
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repos-owner-repo-git-tags-shacode-get-postman.md
 x-common:
 - type: x-net-library
   url: https://github.com/octokit/octokit.net
