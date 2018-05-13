@@ -1,8 +1,9 @@
 ---
 swagger: "2.0"
 info:
-  title: AWS EC2 Container Registry API
+  title: AWS EC2 Container Registry API Delete Repository
   version: 1.0.0
+  description: Deletes an existing image repository.
 schemes:
 - http
 produces:
