@@ -52,17 +52,19 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repos-owner-repo-downloads-downloadid-get.md
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repos-owner-repo-downloads-downloadid-get-postman.md
-- name: Github Get Repos Owner Repo Git Tags Shacode
-  description: Get a Tag.
+- name: Github Add Repos Owner Repo Git Trees
+  description: |-
+    Create a Tree.
+    The tree creation API will take nested entries as well. If both a tree and
+    a nested path modifying that tree are specified, it will overwrite the
+    contents of that tree with the new path contents and write a new tree out.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
   humanURL: https://github.com
   baseURL: https://api.github.com//
   tags: Repos
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repos-owner-repo-git-tags-shacode-get.md
-  - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repos-owner-repo-git-tags-shacode-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repos-owner-repo-git-trees-post.md
 x-common:
 - type: x-net-library
   url: https://github.com/octokit/octokit.net
