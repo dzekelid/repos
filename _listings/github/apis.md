@@ -41,23 +41,15 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/users-username-repos-get.md
-- name: Github Get Repos Owner Repo Contents Path
-  description: |-
-    Get contents.
-    This method returns the contents of a file or directory in a repository.
-    Files and symlinks support a custom media type for getting the raw content.
-    Directories and submodules do not support custom media types.
-    Note: This API supports files up to 1 megabyte in size.
-    Here can be many outcomes. For details see "http://developer.github.com/v3/repos/contents/"
+- name: Github Put Repos Owner Repo Contents Path
+  description: Create a file.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
   humanURL: https://github.com
   baseURL: https://api.github.com//
   tags: Repos
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repos-owner-repo-contents-path-get.md
-  - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repos-owner-repo-contents-path-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repos-owner-repo-contents-path-put.md
 x-common:
 - type: x-net-library
   url: https://github.com/octokit/octokit.net
