@@ -1,322 +1,2324 @@
 ---
 name: GitHub
-description: GitHub is a social network for programmers. Git is a distributed software
-  management program created by Linus Torvalds, originally for the Linux Kernel Development.
-  GitHub is a hosted Git repository. Github allows you to take part in collaboration
-  by forking projects, sending and pulling requests, and monitoring development.
+x-slug: github
+description: GitHub brings together the worlds largest community of developers to
+  discover, share, and build better software. From open source projects to private
+  team repositories, were your all-in-one platform for collaborative development.
 image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
 x-kinRank: "10"
-x-alexaRank: "70"
-tags:
-- Technology
-- Stack Network
-- Stack
-- Social
-- Social
-- SaaS
-- Programming
-- My API Stack
-- Management
-- Jobs
-- Issues
-- Issue Management
-- Imports
-- Hacker Storytelling
-- Developers
-- Coding
-- Code
-- Change Log Example
-- Change Log
-created: "2018-03-23"
-modified: "2018-03-23"
-url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/apis.yaml
+x-alexaRank: "64"
+tags: Repos
+created: "2018-08-28"
+modified: "2018-08-28"
+url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/apis.md
 specificationVersion: "0.14"
 apis:
-- name: Github
-  description: GitHub is a social network for programmers
+- name: GitHub - Get Legacy Repos Search Keyword
+  x-api-slug: legacyrepossearchkeyword-get
+  description: Find repositories by keyword. Note, this legacy method does not follow
+    the v3 pagination pattern. This method returns up to 100 results per page and
+    pages can be fetched using the start_page parameter.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
-  humanURL: ""
+  humanURL: https://github.com
   baseURL: https://api.github.com//
-  tags: Repos
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/legacyrepossearchkeyword-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/legacyrepossearchkeyword-get-openapi.md
+- name: GitHub - Get Orgs Org Repos
+  x-api-slug: orgsorgrepos-get
+  description: List repositories for the specified org.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/orgsorgrepos-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/orgsorgrepos-get-openapi.md
+- name: GitHub - Add Orgs Org Repos
+  x-api-slug: orgsorgrepos-post
+  description: |-
+    Create a new repository for the authenticated user. OAuth users must supply
+    repo scope.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/users-username-repos-get.md
-- name: Github Get Repos Owner Repo Downloads Download
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/orgsorgrepos-post-openapi.md
+- name: GitHub - Delete Repos Owner Repo
+  x-api-slug: reposownerrepo-delete
+  description: |-
+    Delete a Repository.
+    Deleting a repository requires admin access. If OAuth is used, the delete_repo
+    scope is required.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepo-delete-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepo-delete-openapi.md
+- name: GitHub - Get Repos Owner Repo
+  x-api-slug: reposownerrepo-get
+  description: Get repository.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepo-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepo-get-openapi.md
+- name: GitHub - Patch Repos Owner Repo
+  x-api-slug: reposownerrepo-patch
+  description: Edit repository.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepo-patch-openapi.md
+- name: GitHub - Get Repos Owner Repo Assignees
+  x-api-slug: reposownerrepoassignees-get
+  description: |-
+    List assignees.
+    This call lists all the available assignees (owner + collaborators) to which
+    issues may be assigned.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepoassignees-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepoassignees-get-openapi.md
+- name: GitHub - Get Repos Owner Repo Assignees Assignee
+  x-api-slug: reposownerrepoassigneesassignee-get
+  description: |-
+    Check assignee.
+    You may also check to see if a particular user is an assignee for a repository.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepoassigneesassignee-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepoassigneesassignee-get-openapi.md
+- name: GitHub - Get Repos Owner Repo Branches
+  x-api-slug: reposownerrepobranches-get
+  description: Get list of branches
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepobranches-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepobranches-get-openapi.md
+- name: GitHub - Get Repos Owner Repo Branches Branch
+  x-api-slug: reposownerrepobranchesbranch-get
+  description: Get Branch
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepobranchesbranch-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepobranchesbranch-get-openapi.md
+- name: GitHub - Get Repos Owner Repo Collaborators
+  x-api-slug: reposownerrepocollaborators-get
+  description: |-
+    List.
+    When authenticating as an organization owner of an organization-owned
+    repository, all organization owners are included in the list of
+    collaborators. Otherwise, only users with access to the repository are
+    returned in the collaborators list.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepocollaborators-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepocollaborators-get-openapi.md
+- name: GitHub - Delete Repos Owner Repo Collaborators User
+  x-api-slug: reposownerrepocollaboratorsuser-delete
+  description: Remove collaborator.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepocollaboratorsuser-delete-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepocollaboratorsuser-delete-openapi.md
+- name: GitHub - Get Repos Owner Repo Collaborators User
+  x-api-slug: reposownerrepocollaboratorsuser-get
+  description: Check if user is a collaborator
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepocollaboratorsuser-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepocollaboratorsuser-get-openapi.md
+- name: GitHub - Put Repos Owner Repo Collaborators User
+  x-api-slug: reposownerrepocollaboratorsuser-put
+  description: Add collaborator.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepocollaboratorsuser-put-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepocollaboratorsuser-put-openapi.md
+- name: GitHub - Get Repos Owner Repo Comments
+  x-api-slug: reposownerrepocomments-get
+  description: |-
+    List commit comments for a repository.
+    Comments are ordered by ascending ID.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepocomments-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepocomments-get-openapi.md
+- name: GitHub - Delete Repos Owner Repo Comments Comment
+  x-api-slug: reposownerrepocommentscommentid-delete
+  description: Delete a commit comment
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepocommentscommentid-delete-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepocommentscommentid-delete-openapi.md
+- name: GitHub - Get Repos Owner Repo Comments Comment
+  x-api-slug: reposownerrepocommentscommentid-get
+  description: Get a single commit comment.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepocommentscommentid-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepocommentscommentid-get-openapi.md
+- name: GitHub - Patch Repos Owner Repo Comments Comment
+  x-api-slug: reposownerrepocommentscommentid-patch
+  description: Update a commit comment.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepocommentscommentid-patch-openapi.md
+- name: GitHub - Get Repos Owner Repo Commits
+  x-api-slug: reposownerrepocommits-get
+  description: List commits on a repository.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepocommits-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepocommits-get-openapi.md
+- name: GitHub - Get Repos Owner Repo Commits Ref Status
+  x-api-slug: reposownerrepocommitsrefstatus-get
+  description: |-
+    Get the combined Status for a specific Ref
+    The Combined status endpoint is currently available for developers to preview. During the preview period, the API may change without advance notice. Please see the blog post for full details.
+    To access this endpoint during the preview period, you must provide a custom media type in the Accept header:
+    application/vnd.github.she-hulk-preview+json
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepocommitsrefstatus-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepocommitsrefstatus-get-openapi.md
+- name: GitHub - Get Repos Owner Repo Commits Shacode
+  x-api-slug: reposownerrepocommitsshacode-get
+  description: Get a single commit.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepocommitsshacode-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepocommitsshacode-get-openapi.md
+- name: GitHub - Get Repos Owner Repo Commits Shacode Comments
+  x-api-slug: reposownerrepocommitsshacodecomments-get
+  description: List comments for a single commitList comments for a single commit.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepocommitsshacodecomments-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepocommitsshacodecomments-get-openapi.md
+- name: GitHub - Add Repos Owner Repo Commits Shacode Comments
+  x-api-slug: reposownerrepocommitsshacodecomments-post
+  description: Create a commit comment.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepocommitsshacodecomments-post-openapi.md
+- name: GitHub - Get Repos Owner Repo Compare Base ... Head
+  x-api-slug: reposownerrepocomparebaseid---headid-get
+  description: Compare two commits
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepocomparebaseid---headid-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepocomparebaseid---headid-get-openapi.md
+- name: GitHub - Delete Repos Owner Repo Contents Path
+  x-api-slug: reposownerrepocontentspath-delete
+  description: |-
+    Delete a file.
+    This method deletes a file in a repository.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepocontentspath-delete-openapi.md
+- name: GitHub - Get Repos Owner Repo Contents Path
+  x-api-slug: reposownerrepocontentspath-get
+  description: |-
+    Get contents.
+    This method returns the contents of a file or directory in a repository.
+    Files and symlinks support a custom media type for getting the raw content.
+    Directories and submodules do not support custom media types.
+    Note: This API supports files up to 1 megabyte in size.
+    Here can be many outcomes. For details see "http://developer.github.com/v3/repos/contents/"
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepocontentspath-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepocontentspath-get-openapi.md
+- name: GitHub - Put Repos Owner Repo Contents Path
+  x-api-slug: reposownerrepocontentspath-put
+  description: Create a file.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepocontentspath-put-openapi.md
+- name: GitHub - Get Repos Owner Repo Contributors
+  x-api-slug: reposownerrepocontributors-get
+  description: Get list of contributors.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepocontributors-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepocontributors-get-openapi.md
+- name: GitHub - Get Repos Owner Repo Deployments
+  x-api-slug: reposownerrepodeployments-get
+  description: Users with pull access can view deployments for a repository
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepodeployments-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepodeployments-get-openapi.md
+- name: GitHub - Add Repos Owner Repo Deployments
+  x-api-slug: reposownerrepodeployments-post
+  description: Users with push access can create a deployment for a given ref
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepodeployments-post-openapi.md
+- name: GitHub - Get Repos Owner Repo Deployments  Statuses
+  x-api-slug: reposownerrepodeploymentsidstatuses-get
+  description: Users with pull access can view deployment statuses for a deployment
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepodeploymentsidstatuses-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepodeploymentsidstatuses-get-openapi.md
+- name: GitHub - Add Repos Owner Repo Deployments  Statuses
+  x-api-slug: reposownerrepodeploymentsidstatuses-post
+  description: |-
+    Create a Deployment Status
+    Users with push access can create deployment statuses for a given deployment:
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepodeploymentsidstatuses-post-openapi.md
+- name: GitHub - Get Repos Owner Repo Downloads
+  x-api-slug: reposownerrepodownloads-get
+  description: Deprecated. List downloads for a repository.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepodownloads-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepodownloads-get-openapi.md
+- name: GitHub - Delete Repos Owner Repo Downloads Download
+  x-api-slug: reposownerrepodownloadsdownloadid-delete
+  description: Deprecated. Delete a download.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepodownloadsdownloadid-delete-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepodownloadsdownloadid-delete-openapi.md
+- name: GitHub - Get Repos Owner Repo Downloads Download
+  x-api-slug: reposownerrepodownloadsdownloadid-get
   description: Deprecated. Get a single download.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
   humanURL: https://github.com
   baseURL: https://api.github.com//
-  tags: Repos
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepodownloadsdownloadid-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepodownloadsdownloadid-get-openapi.md
+- name: GitHub - Get Repos Owner Repo Events
+  x-api-slug: reposownerrepoevents-get
+  description: Get list of repository events.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepoevents-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepoevents-get-openapi.md
+- name: GitHub - Get Repos Owner Repo Forks
+  x-api-slug: reposownerrepoforks-get
+  description: List forks.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepoforks-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepoforks-get-openapi.md
+- name: GitHub - Add Repos Owner Repo Forks
+  x-api-slug: reposownerrepoforks-post
+  description: |-
+    Create a fork.
+    Forking a Repository happens asynchronously. Therefore, you may have to wai
+    a short period before accessing the git objects. If this takes longer than 5
+    minutes, be sure to contact Support.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repos-owner-repo-downloads-downloadid-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepoforks-post-openapi.md
+- name: GitHub - Add Repos Owner Repo Git Blobs
+  x-api-slug: reposownerrepogitblobs-post
+  description: Create a Blob.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepogitblobs-post-openapi.md
+- name: GitHub - Get Repos Owner Repo Git Blobs Shacode
+  x-api-slug: reposownerrepogitblobsshacode-get
+  description: |-
+    Get a Blob.
+    Since blobs can be any arbitrary binary data, the input and responses for
+    the blob API takes an encoding parameter that can be either utf-8 or
+    base64. If your data cannot be losslessly sent as a UTF-8 string, you can
+    base64 encode it.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repos-owner-repo-downloads-downloadid-get-postman.md
-- name: Github Add Repos Owner Repo Issues Number Comments
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepogitblobsshacode-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepogitblobsshacode-get-openapi.md
+- name: GitHub - Add Repos Owner Repo Git Commits
+  x-api-slug: reposownerrepogitcommits-post
+  description: Create a Commit.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepogitcommits-post-openapi.md
+- name: GitHub - Get Repos Owner Repo Git Commits Shacode
+  x-api-slug: reposownerrepogitcommitsshacode-get
+  description: Get a Commit.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepogitcommitsshacode-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepogitcommitsshacode-get-openapi.md
+- name: GitHub - Get Repos Owner Repo Git Refs
+  x-api-slug: reposownerrepogitrefs-get
+  description: Get all References
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepogitrefs-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepogitrefs-get-openapi.md
+- name: GitHub - Add Repos Owner Repo Git Refs
+  x-api-slug: reposownerrepogitrefs-post
+  description: Create a Reference
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepogitrefs-post-openapi.md
+- name: GitHub - Delete Repos Owner Repo Git Refs Ref
+  x-api-slug: reposownerrepogitrefsref-delete
+  description: "Delete a Reference\nExample: Deleting a branch: DELETE /repos/octocat/Hello-World/git/refs/heads/feature-a
+    \nExample: Deleting a tag:        DELETE /repos/octocat/Hello-World/git/refs/tags/v1.0"
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepogitrefsref-delete-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepogitrefsref-delete-openapi.md
+- name: GitHub - Get Repos Owner Repo Git Refs Ref
+  x-api-slug: reposownerrepogitrefsref-get
+  description: Get a Reference
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepogitrefsref-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepogitrefsref-get-openapi.md
+- name: GitHub - Patch Repos Owner Repo Git Refs Ref
+  x-api-slug: reposownerrepogitrefsref-patch
+  description: Update a Reference
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepogitrefsref-patch-openapi.md
+- name: GitHub - Add Repos Owner Repo Git Tags
+  x-api-slug: reposownerrepogittags-post
+  description: |-
+    Create a Tag Object.
+    Note that creating a tag object does not create the reference that makes a
+    tag in Git. If you want to create an annotated tag in Git, you have to do
+    this call to create the tag object, and then create the refs/tags/[tag]
+    reference. If you want to create a lightweight tag, you only have to create
+    the tag reference - this call would be unnecessary.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepogittags-post-openapi.md
+- name: GitHub - Get Repos Owner Repo Git Tags Shacode
+  x-api-slug: reposownerrepogittagsshacode-get
+  description: Get a Tag.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepogittagsshacode-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepogittagsshacode-get-openapi.md
+- name: GitHub - Add Repos Owner Repo Git Trees
+  x-api-slug: reposownerrepogittrees-post
+  description: |-
+    Create a Tree.
+    The tree creation API will take nested entries as well. If both a tree and
+    a nested path modifying that tree are specified, it will overwrite the
+    contents of that tree with the new path contents and write a new tree out.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepogittrees-post-openapi.md
+- name: GitHub - Get Repos Owner Repo Git Trees Shacode
+  x-api-slug: reposownerrepogittreesshacode-get
+  description: Get a Tree.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepogittreesshacode-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepogittreesshacode-get-openapi.md
+- name: GitHub - Get Repos Owner Repo Hooks
+  x-api-slug: reposownerrepohooks-get
+  description: Get list of hooks.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepohooks-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepohooks-get-openapi.md
+- name: GitHub - Add Repos Owner Repo Hooks
+  x-api-slug: reposownerrepohooks-post
+  description: Create a hook.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepohooks-post-openapi.md
+- name: GitHub - Delete Repos Owner Repo Hooks Hook
+  x-api-slug: reposownerrepohookshookid-delete
+  description: Delete a hook.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepohookshookid-delete-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepohookshookid-delete-openapi.md
+- name: GitHub - Get Repos Owner Repo Hooks Hook
+  x-api-slug: reposownerrepohookshookid-get
+  description: Get single hook.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepohookshookid-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepohookshookid-get-openapi.md
+- name: GitHub - Patch Repos Owner Repo Hooks Hook
+  x-api-slug: reposownerrepohookshookid-patch
+  description: Edit a hook.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepohookshookid-patch-openapi.md
+- name: GitHub - Add Repos Owner Repo Hooks Hook Tests
+  x-api-slug: reposownerrepohookshookidtests-post
+  description: |-
+    Test a push hook.
+    This will trigger the hook with the latest push to the current repository
+    if the hook is subscribed to push events. If the hook is not subscribed
+    to push events, the server will respond with 204 but no test POST will
+    be generated.
+    Note: Previously /repos/:owner/:repo/hooks/:id/tes
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepohookshookidtests-post-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepohookshookidtests-post-openapi.md
+- name: GitHub - Get Repos Owner Repo Issues
+  x-api-slug: reposownerrepoissues-get
+  description: List issues for a repository.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepoissues-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepoissues-get-openapi.md
+- name: GitHub - Add Repos Owner Repo Issues
+  x-api-slug: reposownerrepoissues-post
+  description: |-
+    Create an issue.
+    Any user with pull access to a repository can create an issue.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepoissues-post-openapi.md
+- name: GitHub - Get Repos Owner Repo Issues Comments
+  x-api-slug: reposownerrepoissuescomments-get
+  description: List comments in a repository.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepoissuescomments-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepoissuescomments-get-openapi.md
+- name: GitHub - Delete Repos Owner Repo Issues Comments Comment
+  x-api-slug: reposownerrepoissuescommentscommentid-delete
+  description: Delete a comment.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepoissuescommentscommentid-delete-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepoissuescommentscommentid-delete-openapi.md
+- name: GitHub - Get Repos Owner Repo Issues Comments Comment
+  x-api-slug: reposownerrepoissuescommentscommentid-get
+  description: Get a single comment.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepoissuescommentscommentid-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepoissuescommentscommentid-get-openapi.md
+- name: GitHub - Patch Repos Owner Repo Issues Comments Comment
+  x-api-slug: reposownerrepoissuescommentscommentid-patch
+  description: Edit a comment.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepoissuescommentscommentid-patch-openapi.md
+- name: GitHub - Get Repos Owner Repo Issues Events
+  x-api-slug: reposownerrepoissuesevents-get
+  description: List issue events for a repository.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepoissuesevents-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepoissuesevents-get-openapi.md
+- name: GitHub - Get Repos Owner Repo Issues Events Event
+  x-api-slug: reposownerrepoissueseventseventid-get
+  description: Get a single event.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepoissueseventseventid-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepoissueseventseventid-get-openapi.md
+- name: GitHub - Get Repos Owner Repo Issues Number
+  x-api-slug: reposownerrepoissuesnumber-get
+  description: Get a single issue
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepoissuesnumber-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepoissuesnumber-get-openapi.md
+- name: GitHub - Patch Repos Owner Repo Issues Number
+  x-api-slug: reposownerrepoissuesnumber-patch
+  description: |-
+    Edit an issue.
+    Issue owners and users with push access can edit an issue.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepoissuesnumber-patch-openapi.md
+- name: GitHub - Get Repos Owner Repo Issues Number Comments
+  x-api-slug: reposownerrepoissuesnumbercomments-get
+  description: List comments on an issue.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepoissuesnumbercomments-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepoissuesnumbercomments-get-openapi.md
+- name: GitHub - Add Repos Owner Repo Issues Number Comments
+  x-api-slug: reposownerrepoissuesnumbercomments-post
   description: Create a comment.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
   humanURL: https://github.com
   baseURL: https://api.github.com//
-  tags: Repos
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repos-owner-repo-issues-number-comments-post.md
-- name: Github Get Repos Owner Repo Pulls Number Commits
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepoissuesnumbercomments-post-openapi.md
+- name: GitHub - Get Repos Owner Repo Issues Number Events
+  x-api-slug: reposownerrepoissuesnumberevents-get
+  description: List events for an issue.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepoissuesnumberevents-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepoissuesnumberevents-get-openapi.md
+- name: GitHub - Delete Repos Owner Repo Issues Number Labels
+  x-api-slug: reposownerrepoissuesnumberlabels-delete
+  description: Remove all labels from an issue.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepoissuesnumberlabels-delete-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepoissuesnumberlabels-delete-openapi.md
+- name: GitHub - Get Repos Owner Repo Issues Number Labels
+  x-api-slug: reposownerrepoissuesnumberlabels-get
+  description: List labels on an issue.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepoissuesnumberlabels-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepoissuesnumberlabels-get-openapi.md
+- name: GitHub - Add Repos Owner Repo Issues Number Labels
+  x-api-slug: reposownerrepoissuesnumberlabels-post
+  description: Add labels to an issue.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepoissuesnumberlabels-post-openapi.md
+- name: GitHub - Put Repos Owner Repo Issues Number Labels
+  x-api-slug: reposownerrepoissuesnumberlabels-put
+  description: |-
+    Replace all labels for an issue.
+    Sending an empty array ([]) will remove all Labels from the Issue.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepoissuesnumberlabels-put-openapi.md
+- name: GitHub - Delete Repos Owner Repo Issues Number Labels Name
+  x-api-slug: reposownerrepoissuesnumberlabelsname-delete
+  description: Remove a label from an issue.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepoissuesnumberlabelsname-delete-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepoissuesnumberlabelsname-delete-openapi.md
+- name: GitHub - Get Repos Owner Repo Keys
+  x-api-slug: reposownerrepokeys-get
+  description: Get list of keys.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepokeys-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepokeys-get-openapi.md
+- name: GitHub - Add Repos Owner Repo Keys
+  x-api-slug: reposownerrepokeys-post
+  description: Create a key.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepokeys-post-openapi.md
+- name: GitHub - Delete Repos Owner Repo Keys Key
+  x-api-slug: reposownerrepokeyskeyid-delete
+  description: Delete a key.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepokeyskeyid-delete-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepokeyskeyid-delete-openapi.md
+- name: GitHub - Get Repos Owner Repo Keys Key
+  x-api-slug: reposownerrepokeyskeyid-get
+  description: Get a key
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepokeyskeyid-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepokeyskeyid-get-openapi.md
+- name: GitHub - Get Repos Owner Repo Labels
+  x-api-slug: reposownerrepolabels-get
+  description: List all labels for this repository.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepolabels-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepolabels-get-openapi.md
+- name: GitHub - Add Repos Owner Repo Labels
+  x-api-slug: reposownerrepolabels-post
+  description: Create a label.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepolabels-post-openapi.md
+- name: GitHub - Delete Repos Owner Repo Labels Name
+  x-api-slug: reposownerrepolabelsname-delete
+  description: Delete a label.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepolabelsname-delete-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepolabelsname-delete-openapi.md
+- name: GitHub - Get Repos Owner Repo Labels Name
+  x-api-slug: reposownerrepolabelsname-get
+  description: Get a single label.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepolabelsname-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepolabelsname-get-openapi.md
+- name: GitHub - Patch Repos Owner Repo Labels Name
+  x-api-slug: reposownerrepolabelsname-patch
+  description: Update a label.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepolabelsname-patch-openapi.md
+- name: GitHub - Get Repos Owner Repo Languages
+  x-api-slug: reposownerrepolanguages-get
+  description: |-
+    List languages.
+    List languages for the specified repository. The value on the right of a
+    language is the number of bytes of code written in that language.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepolanguages-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepolanguages-get-openapi.md
+- name: GitHub - Add Repos Owner Repo Merges
+  x-api-slug: reposownerrepomerges-post
+  description: Perform a merge.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepomerges-post-openapi.md
+- name: GitHub - Get Repos Owner Repo Milestones
+  x-api-slug: reposownerrepomilestones-get
+  description: List milestones for a repository.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepomilestones-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepomilestones-get-openapi.md
+- name: GitHub - Add Repos Owner Repo Milestones
+  x-api-slug: reposownerrepomilestones-post
+  description: Create a milestone.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepomilestones-post-openapi.md
+- name: GitHub - Delete Repos Owner Repo Milestones Number
+  x-api-slug: reposownerrepomilestonesnumber-delete
+  description: Delete a milestone.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepomilestonesnumber-delete-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepomilestonesnumber-delete-openapi.md
+- name: GitHub - Get Repos Owner Repo Milestones Number
+  x-api-slug: reposownerrepomilestonesnumber-get
+  description: Get a single milestone.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepomilestonesnumber-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepomilestonesnumber-get-openapi.md
+- name: GitHub - Patch Repos Owner Repo Milestones Number
+  x-api-slug: reposownerrepomilestonesnumber-patch
+  description: Update a milestone.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepomilestonesnumber-patch-openapi.md
+- name: GitHub - Get Repos Owner Repo Milestones Number Labels
+  x-api-slug: reposownerrepomilestonesnumberlabels-get
+  description: Get labels for every issue in a milestone.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepomilestonesnumberlabels-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepomilestonesnumberlabels-get-openapi.md
+- name: GitHub - Get Repos Owner Repo Notifications
+  x-api-slug: reposownerreponotifications-get
+  description: |-
+    List your notifications in a repository
+    List all notifications for the current user.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerreponotifications-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerreponotifications-get-openapi.md
+- name: GitHub - Put Repos Owner Repo Notifications
+  x-api-slug: reposownerreponotifications-put
+  description: |-
+    Mark notifications as read in a repository.
+    Marking all notifications in a repository as "read" removes them from the
+    default view on GitHub.com.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerreponotifications-put-openapi.md
+- name: GitHub - Get Repos Owner Repo Pulls
+  x-api-slug: reposownerrepopulls-get
+  description: List pull requests.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepopulls-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepopulls-get-openapi.md
+- name: GitHub - Add Repos Owner Repo Pulls
+  x-api-slug: reposownerrepopulls-post
+  description: Create a pull request.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepopulls-post-openapi.md
+- name: GitHub - Get Repos Owner Repo Pulls Comments
+  x-api-slug: reposownerrepopullscomments-get
+  description: |-
+    List comments in a repository.
+    By default, Review Comments are ordered by ascending ID.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepopullscomments-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepopullscomments-get-openapi.md
+- name: GitHub - Delete Repos Owner Repo Pulls Comments Comment
+  x-api-slug: reposownerrepopullscommentscommentid-delete
+  description: Delete a comment.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepopullscommentscommentid-delete-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepopullscommentscommentid-delete-openapi.md
+- name: GitHub - Get Repos Owner Repo Pulls Comments Comment
+  x-api-slug: reposownerrepopullscommentscommentid-get
+  description: Get a single comment.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepopullscommentscommentid-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepopullscommentscommentid-get-openapi.md
+- name: GitHub - Patch Repos Owner Repo Pulls Comments Comment
+  x-api-slug: reposownerrepopullscommentscommentid-patch
+  description: Edit a comment.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepopullscommentscommentid-patch-openapi.md
+- name: GitHub - Get Repos Owner Repo Pulls Number
+  x-api-slug: reposownerrepopullsnumber-get
+  description: Get a single pull request.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepopullsnumber-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepopullsnumber-get-openapi.md
+- name: GitHub - Patch Repos Owner Repo Pulls Number
+  x-api-slug: reposownerrepopullsnumber-patch
+  description: Update a pull request.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepopullsnumber-patch-openapi.md
+- name: GitHub - Get Repos Owner Repo Pulls Number Comments
+  x-api-slug: reposownerrepopullsnumbercomments-get
+  description: List comments on a pull request.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepopullsnumbercomments-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepopullsnumbercomments-get-openapi.md
+- name: GitHub - Add Repos Owner Repo Pulls Number Comments
+  x-api-slug: reposownerrepopullsnumbercomments-post
+  description: |-
+    Create a comment.
+      #TODO Alternative input ( http://developer.github.com/v3/pulls/comments/ )
+      description: |
+        Alternative Input.
+        Instead of passing commit_id, path, and position you can reply to an
+        existing Pull Request Comment like this:
+
+            body
+               Required string
+            in_reply_to
+               Required number - Comment id to reply to.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepopullsnumbercomments-post-openapi.md
+- name: GitHub - Get Repos Owner Repo Pulls Number Commits
+  x-api-slug: reposownerrepopullsnumbercommits-get
   description: List commits on a pull request.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
   humanURL: https://github.com
   baseURL: https://api.github.com//
-  tags: Repos
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepopullsnumbercommits-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepopullsnumbercommits-get-openapi.md
+- name: GitHub - Get Repos Owner Repo Pulls Number Files
+  x-api-slug: reposownerrepopullsnumberfiles-get
+  description: List pull requests files.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepopullsnumberfiles-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepopullsnumberfiles-get-openapi.md
+- name: GitHub - Get Repos Owner Repo Pulls Number Merge
+  x-api-slug: reposownerrepopullsnumbermerge-get
+  description: Get if a pull request has been merged.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepopullsnumbermerge-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepopullsnumbermerge-get-openapi.md
+- name: GitHub - Put Repos Owner Repo Pulls Number Merge
+  x-api-slug: reposownerrepopullsnumbermerge-put
+  description: Merge a pull request (Merge Button's)
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repos-owner-repo-pulls-number-commits-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepopullsnumbermerge-put-openapi.md
+- name: GitHub - Get Repos Owner Repo Readme
+  x-api-slug: reposownerreporeadme-get
+  description: |-
+    Get the README.
+    This method returns the preferred README for a repository.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repos-owner-repo-pulls-number-commits-get-postman.md
-- name: Github Delete Repos Owner Repo Releases Assets
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerreporeadme-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerreporeadme-get-openapi.md
+- name: GitHub - Get Repos Owner Repo Releases
+  x-api-slug: reposownerreporeleases-get
+  description: Users with push access to the repository will receive all releases
+    (i.e., published releases and draft releases). Users with pull access will receive
+    published releases only
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerreporeleases-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerreporeleases-get-openapi.md
+- name: GitHub - Add Repos Owner Repo Releases
+  x-api-slug: reposownerreporeleases-post
+  description: |-
+    Create a release
+    Users with push access to the repository can create a release.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerreporeleases-post-openapi.md
+- name: GitHub - Delete Repos Owner Repo Releases Assets
+  x-api-slug: reposownerreporeleasesassetsid-delete
   description: Delete a release asset
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
   humanURL: https://github.com
   baseURL: https://api.github.com//
-  tags: Repos
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerreporeleasesassetsid-delete-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerreporeleasesassetsid-delete-openapi.md
+- name: GitHub - Get Repos Owner Repo Releases Assets
+  x-api-slug: reposownerreporeleasesassetsid-get
+  description: Get a single release asset
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerreporeleasesassetsid-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerreporeleasesassetsid-get-openapi.md
+- name: GitHub - Patch Repos Owner Repo Releases Assets
+  x-api-slug: reposownerreporeleasesassetsid-patch
+  description: |-
+    Edit a release asset
+    Users with push access to the repository can edit a release asset.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repos-owner-repo-releases-assets-id-delete.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerreporeleasesassetsid-patch-openapi.md
+- name: GitHub - Delete Repos Owner Repo Releases
+  x-api-slug: reposownerreporeleasesid-delete
+  description: Users with push access to the repository can delete a release.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/repos-owner-repo-releases-assets-id-delete-postman.md
-- name: Github Get Users Username Repos
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerreporeleasesid-delete-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerreporeleasesid-delete-openapi.md
+- name: GitHub - Get Repos Owner Repo Releases
+  x-api-slug: reposownerreporeleasesid-get
+  description: Get a single release
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerreporeleasesid-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerreporeleasesid-get-openapi.md
+- name: GitHub - Patch Repos Owner Repo Releases
+  x-api-slug: reposownerreporeleasesid-patch
+  description: Users with push access to the repository can edit a release
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerreporeleasesid-patch-openapi.md
+- name: GitHub - Get Repos Owner Repo Releases  Assets
+  x-api-slug: reposownerreporeleasesidassets-get
+  description: List assets for a release
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerreporeleasesidassets-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerreporeleasesidassets-get-openapi.md
+- name: GitHub - Get Repos Owner Repo Stargazers
+  x-api-slug: reposownerrepostargazers-get
+  description: List Stargazers.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepostargazers-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepostargazers-get-openapi.md
+- name: GitHub - Get Repos Owner Repo Stats Code Frequency
+  x-api-slug: reposownerrepostatscode-frequency-get
+  description: |-
+    Get the number of additions and deletions per week.
+    Returns a weekly aggregate of the number of additions and deletions pushed
+    to a repository.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepostatscode-frequency-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepostatscode-frequency-get-openapi.md
+- name: GitHub - Get Repos Owner Repo Stats Commit Activity
+  x-api-slug: reposownerrepostatscommit-activity-get
+  description: |-
+    Get the last year of commit activity data.
+    Returns the last year of commit activity grouped by week. The days array
+    is a group of commits per day, starting on Sunday.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepostatscommit-activity-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepostatscommit-activity-get-openapi.md
+- name: GitHub - Get Repos Owner Repo Stats Contributors
+  x-api-slug: reposownerrepostatscontributors-get
+  description: Get contributors list with additions, deletions, and commit counts.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepostatscontributors-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepostatscontributors-get-openapi.md
+- name: GitHub - Get Repos Owner Repo Stats Participation
+  x-api-slug: reposownerrepostatsparticipation-get
+  description: Get the weekly commit count for the repo owner and everyone else.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepostatsparticipation-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepostatsparticipation-get-openapi.md
+- name: GitHub - Get Repos Owner Repo Stats Punch Card
+  x-api-slug: reposownerrepostatspunch-card-get
+  description: |-
+    Get the number of commits per hour in each day.
+    Each array contains the day number, hour number, and number of commits
+    0-6 Sunday - Saturday
+    0-23 Hour of day
+    Number of commits
+
+    For example, [2, 14, 25] indicates that there were 25 total commits, during
+    the 2.00pm hour on Tuesdays. All times are based on the time zone of
+    individual commits.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepostatspunch-card-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepostatspunch-card-get-openapi.md
+- name: GitHub - Get Repos Owner Repo Statuses Ref
+  x-api-slug: reposownerrepostatusesref-get
+  description: List Statuses for a specific Ref.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepostatusesref-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepostatusesref-get-openapi.md
+- name: GitHub - Add Repos Owner Repo Statuses Ref
+  x-api-slug: reposownerrepostatusesref-post
+  description: Create a Status.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepostatusesref-post-openapi.md
+- name: GitHub - Get Repos Owner Repo Subscribers
+  x-api-slug: reposownerreposubscribers-get
+  description: List watchers.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerreposubscribers-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerreposubscribers-get-openapi.md
+- name: GitHub - Delete Repos Owner Repo Subscription
+  x-api-slug: reposownerreposubscription-delete
+  description: Delete a Repository Subscription.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerreposubscription-delete-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerreposubscription-delete-openapi.md
+- name: GitHub - Get Repos Owner Repo Subscription
+  x-api-slug: reposownerreposubscription-get
+  description: Get a Repository Subscription.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerreposubscription-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerreposubscription-get-openapi.md
+- name: GitHub - Put Repos Owner Repo Subscription
+  x-api-slug: reposownerreposubscription-put
+  description: Set a Repository Subscription
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerreposubscription-put-openapi.md
+- name: GitHub - Get Repos Owner Repo Tags
+  x-api-slug: reposownerrepotags-get
+  description: Get list of tags.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepotags-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepotags-get-openapi.md
+- name: GitHub - Get Repos Owner Repo Teams
+  x-api-slug: reposownerrepoteams-get
+  description: Get list of teams
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepoteams-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepoteams-get-openapi.md
+- name: GitHub - Get Repos Owner Repo Watchers
+  x-api-slug: reposownerrepowatchers-get
+  description: List Stargazers. New implementation.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepowatchers-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepowatchers-get-openapi.md
+- name: GitHub - Get Repos Owner Repo Archive Format Path
+  x-api-slug: reposownerrepoarchive-formatpath-get
+  description: |-
+    Get archive link.
+    This method will return a 302 to a URL to download a tarball or zipball
+    archive for a repository. Please make sure your HTTP framework is
+    configured to follow redirects or you will need to use the Location header
+    to make a second GET request.
+    Note: For private repositories, these links are temporary and expire quickly.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepoarchive-formatpath-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/reposownerrepoarchive-formatpath-get-openapi.md
+- name: GitHub - Get Teams Team Repos
+  x-api-slug: teamsteamidrepos-get
+  description: List team repos
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/teamsteamidrepos-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/teamsteamidrepos-get-openapi.md
+- name: GitHub - Put Teams Team Repos Org Repo
+  x-api-slug: teamsteamidreposorgrepo-put
+  description: In order to add a repository to a team, the authenticated user must
+    be an owner of the org that the team is associated with. Also, the repository
+    must be owned by the organization, or a direct fork of a repository owned by the
+    organization.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/teamsteamidreposorgrepo-put-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/teamsteamidreposorgrepo-put-openapi.md
+- name: GitHub - Delete Teams Team Repos Owner Repo
+  x-api-slug: teamsteamidreposownerrepo-delete
+  description: 'In order to remove a repository from a team, the authenticated user
+    must be an owner of the org that the team is associated with. NOTE: This does
+    not delete the repository, it just removes it from the team.'
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/teamsteamidreposownerrepo-delete-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/teamsteamidreposownerrepo-delete-openapi.md
+- name: GitHub - Get Teams Team Repos Owner Repo
+  x-api-slug: teamsteamidreposownerrepo-get
+  description: Check if a team manages a repository
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/teamsteamidreposownerrepo-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/teamsteamidreposownerrepo-get-openapi.md
+- name: GitHub - Get User Repos
+  x-api-slug: userrepos-get
+  description: |-
+    List repositories for the authenticated user. Note that this does not include
+    repositories owned by organizations which the user can access. You can lis
+    user organizations and list organization repositories separately.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/userrepos-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/userrepos-get-openapi.md
+- name: GitHub - Add User Repos
+  x-api-slug: userrepos-post
+  description: |-
+    Create a new repository for the authenticated user. OAuth users must supply
+    repo scope.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
+  humanURL: https://github.com
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/userrepos-post-openapi.md
+- name: GitHub - Get Users Username Repos
+  x-api-slug: usersusernamerepos-get
   description: List public repositories for the specified user.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
   humanURL: https://github.com
   baseURL: https://api.github.com//
-  tags: Repos
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
   properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/users-username-repos-get.md
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/users-username-repos-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/usersusernamerepos-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/repos/master/_listings/github/usersusernamerepos-get-openapi.md
 x-common:
-- type: x-net-library
+- type: x--net-library
   url: https://github.com/octokit/octokit.net
-- type: x-base
-  url: https://api.github.com
-- type: x-blog
-  url: http://github.com/blog
-- type: x-blog-rss
-  url: https://github.com/blog/subscribe
-- type: x-change-log
-  url: https://developer.github.com/changes/
-- type: x-contact-form
-  url: https://github.com/contact
-- type: x-crunchbase
-  url: http://www.crunchbase.com/company/github
-- type: x-crunchbase
-  url: https://crunchbase.com/organization/github
-- type: x-developer
-  url: https://developer.github.com/
-- type: x-github
-  url: https://github.com/github
-- type: x-guides
-  url: https://developer.github.com/guides/
-- type: x-ios-sdk
-  url: https://github.com/octokit/octokit.objc
-- type: x-pricing
-  url: https://github.com/pricing
-- type: x-privacy
-  url: http://help.github.com/privacy-policy/
-- type: x-ruby-library
-  url: https://github.com/octokit/octokit.rb
-- type: x-security
-  url: http://help.github.com/security/
-- type: x-status
-  url: https://status.github.com/
-- type: x-terms-of-service
-  url: http://help.github.com/terms-of-service/
-- type: x-transparency-report
-  url: https://github.com/blog/1987-github-s-2014-transparency-report
-- type: x-twitter
-  url: https://twitter.com/github
-- type: x-webhooks
-  url: https://developer.github.com/webhooks/
-- type: x-website
-  url: https://github.com
-- type: x-net-library
-  url: https://github.com/octokit/octokit.net
-- type: x-base
-  url: https://api.github.com
-- type: x-blog
-  url: http://github.com/blog
-- type: x-blog-rss
-  url: https://github.com/blog/subscribe
-- type: x-change-log
-  url: https://developer.github.com/changes/
-- type: x-contact-form
-  url: https://github.com/contact
-- type: x-crunchbase
-  url: http://www.crunchbase.com/company/github
-- type: x-crunchbase
-  url: https://crunchbase.com/organization/github
-- type: x-developer
-  url: https://developer.github.com/
-- type: x-github
-  url: https://github.com/github
-- type: x-guides
-  url: https://developer.github.com/guides/
-- type: x-ios-sdk
-  url: https://github.com/octokit/octokit.objc
-- type: x-pricing
-  url: https://github.com/pricing
-- type: x-privacy
-  url: http://help.github.com/privacy-policy/
-- type: x-ruby-library
-  url: https://github.com/octokit/octokit.rb
-- type: x-security
-  url: http://help.github.com/security/
-- type: x-status
-  url: https://status.github.com/
-- type: x-terms-of-service
-  url: http://help.github.com/terms-of-service/
-- type: x-transparency-report
-  url: https://github.com/blog/1987-github-s-2014-transparency-report
-- type: x-twitter
-  url: https://twitter.com/github
-- type: x-webhooks
-  url: https://developer.github.com/webhooks/
-- type: x-website
-  url: https://github.com
-- type: x-net-library
-  url: https://github.com/octokit/octokit.net
-- type: x-base
-  url: https://api.github.com
-- type: x-blog
-  url: http://github.com/blog
-- type: x-blog-rss
-  url: https://github.com/blog/subscribe
-- type: x-change-log
-  url: https://developer.github.com/changes/
-- type: x-contact-form
-  url: https://github.com/contact
-- type: x-crunchbase
-  url: http://www.crunchbase.com/company/github
-- type: x-crunchbase
-  url: https://crunchbase.com/organization/github
-- type: x-developer
-  url: https://developer.github.com/
-- type: x-github
-  url: https://github.com/github
-- type: x-guides
-  url: https://developer.github.com/guides/
-- type: x-ios-sdk
-  url: https://github.com/octokit/octokit.objc
-- type: x-pricing
-  url: https://github.com/pricing
-- type: x-privacy
-  url: http://help.github.com/privacy-policy/
-- type: x-ruby-library
-  url: https://github.com/octokit/octokit.rb
-- type: x-security
-  url: http://help.github.com/security/
-- type: x-status
-  url: https://status.github.com/
-- type: x-terms-of-service
-  url: http://help.github.com/terms-of-service/
-- type: x-transparency-report
-  url: https://github.com/blog/1987-github-s-2014-transparency-report
-- type: x-twitter
-  url: https://twitter.com/github
-- type: x-webhooks
-  url: https://developer.github.com/webhooks/
-- type: x-website
-  url: https://github.com
-- type: x-net-library
-  url: https://github.com/octokit/octokit.net
-- type: x-base
-  url: https://api.github.com
-- type: x-blog
-  url: http://github.com/blog
-- type: x-blog-rss
-  url: https://github.com/blog/subscribe
-- type: x-change-log
-  url: https://developer.github.com/changes/
-- type: x-contact-form
-  url: https://github.com/contact
-- type: x-crunchbase
-  url: http://www.crunchbase.com/company/github
-- type: x-crunchbase
-  url: https://crunchbase.com/organization/github
-- type: x-developer
-  url: https://developer.github.com/
-- type: x-github
-  url: https://github.com/github
-- type: x-guides
-  url: https://developer.github.com/guides/
-- type: x-ios-sdk
-  url: https://github.com/octokit/octokit.objc
-- type: x-pricing
-  url: https://github.com/pricing
-- type: x-privacy
-  url: http://help.github.com/privacy-policy/
-- type: x-ruby-library
-  url: https://github.com/octokit/octokit.rb
-- type: x-security
-  url: http://help.github.com/security/
-- type: x-status
-  url: https://status.github.com/
-- type: x-terms-of-service
-  url: http://help.github.com/terms-of-service/
-- type: x-transparency-report
-  url: https://github.com/blog/1987-github-s-2014-transparency-report
-- type: x-twitter
-  url: https://twitter.com/github
-- type: x-webhooks
-  url: https://developer.github.com/webhooks/
-- type: x-website
-  url: https://github.com
-- type: x-net-library
-  url: https://github.com/octokit/octokit.net
-- type: x-base
-  url: https://api.github.com
-- type: x-blog
-  url: http://github.com/blog
-- type: x-blog-rss
-  url: https://github.com/blog/subscribe
-- type: x-change-log
-  url: https://developer.github.com/changes/
-- type: x-contact-form
-  url: https://github.com/contact
-- type: x-crunchbase
-  url: http://www.crunchbase.com/company/github
-- type: x-crunchbase
-  url: https://crunchbase.com/organization/github
-- type: x-developer
-  url: https://developer.github.com/
-- type: x-github
-  url: https://github.com/github
-- type: x-guides
-  url: https://developer.github.com/guides/
-- type: x-ios-sdk
-  url: https://github.com/octokit/octokit.objc
-- type: x-pricing
-  url: https://github.com/pricing
-- type: x-privacy
-  url: http://help.github.com/privacy-policy/
-- type: x-ruby-library
-  url: https://github.com/octokit/octokit.rb
-- type: x-security
-  url: http://help.github.com/security/
-- type: x-status
-  url: https://status.github.com/
-- type: x-terms-of-service
-  url: http://help.github.com/terms-of-service/
-- type: x-transparency-report
-  url: https://github.com/blog/1987-github-s-2014-transparency-report
-- type: x-twitter
-  url: https://twitter.com/github
-- type: x-webhooks
-  url: https://developer.github.com/webhooks/
-- type: x-website
-  url: https://github.com
-- type: x-net-library
-  url: https://github.com/octokit/octokit.net
+- type: x-api-gallery
+  url: http://giphy.api.gallery.streamdata.io
+- type: x-api-stack
+  url: http://github.stack.network
 - type: x-base
   url: https://api.github.com
 - type: x-blog
